@@ -1,0 +1,31 @@
+body {
+  font-family: "YuMincho", "Yu Mincho", serif;
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.title__img-wrapper {
+  text-align: center;
+  width: 40px;
+  width: 2.5rem;
+}
+
+.title {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1;
+}
+/*# sourceMappingURL=c-title.css.map */

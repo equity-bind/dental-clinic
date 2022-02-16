@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.c-button {
+  display: inline-block;
+  text-align: center;
+  font-size: rem(16);
+  width: rem(200);
+  border: rem(1) solid #707070;
+}

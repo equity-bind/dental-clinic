@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.c-title {
+}
+
+.title__img-wrapper {
+  text-align: center;
+  width: rem(40);
+}
+
+.title {
+  font-size: rem(36);
+  line-height: 1;
+}

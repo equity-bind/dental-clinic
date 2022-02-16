@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.c-media {
+  width: 100vw;
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
+}
+
+.c-media__img-wrapper {
+  position: relative;
+  width: 100%;
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 51.9%;
+  }
+}
+
+.c-media__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c-media__contents {
+}
+
+.c-media__content {
+  font-weight: $normal;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.c-media__text {
+  font-size: rem(11);
+  line-height: 2;
+}
