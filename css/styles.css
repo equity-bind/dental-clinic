@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "YuMincho", "Yu Mincho", serif;
+  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
 }
 
 .u-desktop {
@@ -193,6 +193,14 @@ select::-ms-expand {
   margin: 0 auto;
 }
 
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
 .test {
   font-size: 20px;
   font-size: 1.25rem;
@@ -211,42 +219,61 @@ select::-ms-expand {
   border: 0.0625rem solid #707070;
 }
 
-.c-media {
-  width: 100vw;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.c-media__img-wrapper {
+.c-hamburger {
   position: relative;
+  cursor: pointer;
+  max-width: 29px;
+  max-width: 1.8125rem;
   width: 100%;
+  height: 20px;
+  height: 1.25rem;
+  z-index: 999;
 }
-.c-media__img-wrapper::before {
-  content: "";
-  display: block;
-  padding-top: 51.9%;
+@media screen and (min-width: 768px) {
+  .c-hamburger {
+    display: none;
+  }
 }
 
-.c-media__img {
+.c-hamburger.open span:nth-child(1) {
+  top: 10px;
+  top: 0.625rem;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.c-hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.c-hamburger.open span:nth-child(3) {
+  top: 10px;
+  top: 0.625rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.c-hamburger span {
+  display: inline-block;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 100;
+  border-radius: 0.0625rem;
+  height: 2px;
+  height: 0.125rem;
+  background-color: #fff;
+  max-width: 29px;
+  max-width: 1.8125rem;
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
-
-.c-media__content {
-  font-weight: 400;
-  text-align: center;
-  line-height: 1.7;
+.c-hamburger span:nth-child(2) {
+  top: 10px;
+  top: 0.625rem;
 }
-
-.c-media__text {
-  font-size: 11px;
-  font-size: 0.6875rem;
-  line-height: 2;
+.c-hamburger span:nth-child(3) {
+  top: 20px;
+  top: 1.25rem;
 }
 
 .title__img-wrapper {
@@ -259,5 +286,105 @@ select::-ms-expand {
   font-size: 36px;
   font-size: 2.25rem;
   line-height: 1;
+}
+
+.p-header {
+  height: 80px;
+  height: 5rem;
+}
+
+.p-header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: inherit;
+}
+
+.p-header__logo {
+  width: 200px;
+  width: 12.5rem;
+}
+
+.p-media {
+  width: 100vw;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.p-media__img-wrapper {
+  position: relative;
+  width: 100%;
+}
+.p-media__img-wrapper::before {
+  content: "";
+  display: block;
+  padding-top: 51.9%;
+}
+
+.p-media__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-media__content {
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.p-media__text {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  line-height: 2;
+}
+
+.p-mv {
+  position: relative;
+  height: 100vh;
+}
+
+.p-mv__img {
+  width: 100%;
+  height: 100vh;
+}
+
+.p-mv__img img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-mv__block {
+  color: #fff;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  position: absolute;
+  top: 33%;
+  right: 26%;
+}
+
+.p-mv__title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  line-height: 2.1;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__title {
+    font-size: 2.125rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
