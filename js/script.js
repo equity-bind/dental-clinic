@@ -29,12 +29,16 @@ jQuery(function ($) {
 
   //ドロワーメニュー
   $(".js-hamburger").on("click", function () {
-    if ($(".js-hamburger").hasClass("open")) {
-      // $(".js-drawer-menu").removeClass("open");
-      $(this).removeClass("open");
+    if ($(".js-hamburger").hasClass("is-open")) {
+      // $(".js-drawer-menu").removeClass("is-open");
+      $(".js-drawer-menu").fadeOut();
+      $(".p-header__link").removeClass("is-open");
+      $(this).removeClass("is-open");
     } else {
-      // $(".js-drawer-menu").addClass("open");
-      $(this).addClass("open");
+      // $(".js-drawer-menu").addClass("is-open");
+      $(".js-drawer-menu").fadeIn();
+      $(".p-header__link").addClass("is-open");
+      $(this).addClass("is-open");
     }
   });
 
