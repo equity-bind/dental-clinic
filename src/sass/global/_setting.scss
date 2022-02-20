@@ -35,7 +35,7 @@ $light-gray: #f6f6f6;
 
 body {
   font-family: $base-font-family;
-  background-color: $black;
+  background-color: $white;
 }
 
 ////////////////////
@@ -93,6 +93,8 @@ $mediaquerys: (
   display: inline-block;
   text-align: center;
   font-size: rem(16);
-  width: rem(200);
+  line-height: 2;
+  min-width: rem(200);
+  padding: 1.25em 2.75em;
   border: rem(1) solid #707070;
 }
