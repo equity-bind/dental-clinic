@@ -17,67 +17,190 @@
     <meta property="og:description" content="" />
 
     <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="l-header p-header">
       <div class="p-header__inner inner">
-        <h1 class="p-header__logo">
-          <a href="#" class="p-header__link"></a>
-          <!-- <img src="images/common/top-header-logo.svg" alt="ヘッダーロゴ" /> </a> -->
-          <!-- /.logo__link -->
-        </h1>
-        <!-- /.p-header__logo -->
-        <button class="p-header__menu c-hamburger js-hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <!-- /.p-header__menu c-hamburger -->
-        <nav class="sp-nav js-drawer-menu">
-          <ul class="sp-nav__items">
-            <li class="sp-nav__item sp-nav__item--yellow">
-              <a href="#" class="sp-nav__link">宿泊予約</a
-              ><!-- /.sp-nav__link -->
-            </li>
-            <!-- /.sp-nav__item -->
-            <li class="sp-nav__item">
-              <a href="#" class="sp-nav__link">お部屋</a
-              ><!-- /.sp-nav__link -->
-            </li>
-            <!-- /.sp-nav__item -->
-            <li class="sp-nav__item">
-              <a href="#" class="sp-nav__link">お料理</a
-              ><!-- /.sp-nav__link -->
-            </li>
-            <!-- /.sp-nav__item -->
-            <li class="sp-nav__item">
-              <a href="#" class="sp-nav__link">温泉</a
-              ><!-- /.sp-nav__link -->
-            </li>
-            <!-- /.sp-nav__item -->
-          </ul>
-          <!-- /.sp-nav__items -->
-        </nav>
-        <!-- /.sp-nav -->
+        <div class="p-header__wrapper">
+          <h1 class="p-header__logo">
+            <a href="#" class="p-header__link"></a>
+            <!-- <img src="images/common/top-header-logo.svg" alt="ヘッダーロゴ" /> </a> -->
+            <!-- /.logo__link -->
+          </h1>
+          <!-- /.p-header__logo -->
+          <button class="p-header__menu c-hamburger js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <!-- /.p-header__menu c-hamburger -->
+          <nav class="sp-nav js-drawer-menu">
+            <ul class="sp-nav__items">
+              <li class="sp-nav__item sp-nav__item--yellow">
+                <a href="#" class="sp-nav__link c-button--reserve_sp js-modal-open">宿泊予約</a
+                ><!-- /.sp-nav__link -->
+              </li>
+              <!-- /.sp-nav__item -->
+              <li class="sp-nav__item">
+                <a href="#" class="sp-nav__link">お部屋</a
+                ><!-- /.sp-nav__link -->
+              </li>
+              <!-- /.sp-nav__item -->
+              <li class="sp-nav__item">
+                <a href="#" class="sp-nav__link">お料理</a
+                ><!-- /.sp-nav__link -->
+              </li>
+              <!-- /.sp-nav__item -->
+              <li class="sp-nav__item">
+                <a href="#" class="sp-nav__link">温泉</a
+                ><!-- /.sp-nav__link -->
+              </li>
+              <!-- /.sp-nav__item -->
+            </ul>
+            <!-- /.sp-nav__items -->
+          </nav>
+          <!-- /.sp-nav -->
+          <nav class="pc-nav">
+            <ul class="pc-nav__items">
+              <li class="pc-nav__item">
+                <a href="#" class="pc-nav__link">お部屋</a
+                ><!-- /.pc-nav__link -->
+              </li>
+              <!-- /.pc-nav__item -->
+              <li class="pc-nav__item">
+                <a href="#" class="pc-nav__link">お料理</a
+                ><!-- /.pc-nav__link -->
+              </li>
+              <!-- /.pc-nav__item -->
+              <li class="pc-nav__item">
+                <a href="#" class="pc-nav__link">温泉</a
+                ><!-- /.pc-nav__link -->
+              </li>
+              <!-- /.pc-nav__item -->
+            </ul>
+            <!-- /.pc-nav__items -->
+          </nav>
+          <!-- /.pc-nav -->
+        </div>
+        <!-- /.p-header__wrapper -->
+        <a href="#" class="c-button--reserve js-modal-open">宿泊予約</a
+        ><!-- /.pc-nav__link--reserve -->
+        <div class="p-modal js-modal">
+          <div class="p-modal__bg js-modal__close"></div>
+          <!-- /.p-modal__bg js-modal__close -->
+          <div class="p-modal__body">
+            <a href="#" class="p-modal__close js-modal__close"></a>
+            <!-- /.p-modal__close -->
+            <div class="p-modal__inner">
+              <h3 class="p-modal__title">宿泊予約</h3>
+              <!-- /.p-modal__title -->
+              <form class="p-modal__form" action="#">
+                <div class="p-modal__item">
+                  <label class="p-modal__label" for="name">お名前</label><br />
+                  <input type="text" name="your-name" id="name" placeholder="例：石井正悟" required /><br />
+                </div>
+                <!-- /.p-modal__item -->
+                <div class="p-modal__item">
+                  <label class="p-modal__label" for="email">メールアドレス</label><br />
+                  <input type="text" name="your-email" id="email" placeholder="例：Example@example.com" required /><br />
+                </div>
+                <!-- /.p-modal__item -->
+                <div class="p-modal__item">
+                  <label class="p-modal__label" for="plan">ご希望プラン（空いているプランのみ表示されます）</label><br />
+                  <select name="selected_plan" id="plan" required>
+                    <option value="">プランを選択してください</option>
+                    <option value="①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                    <option value="②平日に優雅に楽しむ、特別宿泊プラン">②平日に優雅に楽しむ、特別宿泊プラン</option>
+                    <option value="③絶景貸切露天と個室会席を満喫できるファミリープラン">③絶景貸切露天と個室会席を満喫できるファミリープラン</option></select
+                  ><!-- /# -->
+                </div>
+                <!-- /.p-modal__item -->
+                <div class="p-modal__item">
+                  <label class="p-modal__label" for="js-datepicker">日時選択</label><br />
+                  <input type="text" name="datepicker" id="js-datepicker" placeholder="日時を選択してください" required />
+                </div>
+                <!-- /.p-modal__item -->
+                <div class="p-modal__item--submit">
+                  <input type="submit" value="送信する" />
+                </div>
+                <!-- /.p-modal__item--submit -->
+              </form>
+              <!-- /.p-modal__form -->
+            </div>
+            <!-- /.p-modal__inner -->
+          </div>
+          <!-- /.p-modal__content -->
+        </div>
+        <!-- /.p-modal -->
       </div>
       <!-- /.p-header__inner -->
     </header>
     <!-- /.l-header p-header -->
     <div class="l-mv p-mv">
-      <div class="p-mv__img">
-        <img src="images/common/mainbg01.jpg" alt="トップ画面" />
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="p-mv__img">
+              <img src="images/common/mainbg01.jpg" alt="トップ画面その1" />
+            </div>
+            <div class="p-mv__block">
+              <h2 class="p-mv__title">頑 張 る 人 の<br />頑 張 ら な い 時 間</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="p-mv__img">
+              <img src="images/common/mainbg02.jpg" alt="トップ画面その1" />
+            </div>
+            <div class="p-mv__block">
+              <h2 class="p-mv__title">頑 張 る 人 の<br />頑 張 ら な い 時 間</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="p-mv__img">
+              <img src="images/common/mainbg03.jpg" alt="トップ画面その1" />
+            </div>
+            <div class="p-mv__block">
+              <h2 class="p-mv__title">頑 張 る 人 の<br />頑 張 ら な い 時 間</h2>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- /.p-mv__img -->
-      <div class="p-mv__block">
-        <h2 class="p-mv__title">頑 張 る 人 の<br />頑 張 ら な い 時 間</h2>
-        <!-- /.p-mv__title -->
-      </div>
-      <!-- /.p-mv__block -->
     </div>
     <!-- /.l-mv p-mv -->
+    <section class="concept">
+      <div class="concept__inner">
+        <h3 class="concept__title">温海温泉の<br />美しさに癒されて</h3>
+        <!-- /.concept__title -->
+        <p class="concept__text">
+          東北の奥座敷である温海温泉郷<br />開湯は約1300年前とされ、役小角が<br />
+          発見したと伝えられます
+        </p>
+        <!-- /.concept__text -->
+        <p class="concept__text">
+          石井花壇は江戸より続く由緒ある旅館で<br />
+          クラシックな作りの中に大正ロマンあふれる<br />
+          内装を残しております
+        </p>
+        <!-- /.concept__text -->
+        <p class="concept__text">
+          圧倒的癒やしの空間で<br />
+          頑張る現代人に<br />
+          頑張らない圧倒的な非日常をご提供します
+        </p>
+        <!-- /.concept__text -->
+        <p class="concept__author">石井花壇</p>
+        <!-- /.concept__author -->
+      </div>
+      <!-- /.concept__inner -->
+    </section>
+    <!-- /.concept -->
   </body>
 </html>

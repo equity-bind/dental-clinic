@@ -19,13 +19,8 @@ $base-font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “�
 $heading-family: "Toppan Bunkyu Midashi Mincho";
 // ※検証ツールでしっかり反映されているか確認する
 
-body {
-  font-family: $base-font-family;
-}
-
 // フォントウェイト
-$regular: 300;
-$normal: 400;
+$medium: 400;
 $extrabold: 700;
 
 ////////////////////
@@ -37,6 +32,11 @@ $black: #000;
 $white: #fff;
 $yellow: #978f10;
 $light-gray: #f6f6f6;
+
+body {
+  font-family: $base-font-family;
+  background-color: $black;
+}
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
@@ -87,4 +87,12 @@ $mediaquerys: (
   @include mq("md") {
     display: none;
   }
+}
+
+@mixin button {
+  display: inline-block;
+  text-align: center;
+  font-size: rem(16);
+  width: rem(200);
+  border: rem(1) solid #707070;
 }

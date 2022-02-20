@@ -1,9 +1,55 @@
 @use "global" as *;
 
 .c-button {
+  @include button;
+}
+.c-button--reserve {
+  display: none;
+  @include mq("md") {
+    display: inline-block;
+    color: $white;
+    background-color: $yellow;
+    text-align: center;
+    min-width: rem(170);
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 0.5em;
+    padding-bottom: 1em;
+    position: relative;
+  }
+}
+.c-button--reserve::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: rem(26);
+  width: rem(22);
+  height: rem(22);
+  background: url(../images/common/calender.svg) no-repeat center center / contain;
+  transform: translateY(-50%);
+}
+
+.c-button--reserve_sp {
   display: inline-block;
+  color: $white;
+  background-color: $yellow;
   text-align: center;
-  font-size: rem(16);
-  width: rem(200);
-  border: rem(1) solid #707070;
+  min-width: rem(170);
+  width: 70vw;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 0.5em;
+  padding-bottom: 1em;
+  position: relative;
+}
+.c-button--reserve_sp::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: rem(26);
+  width: rem(22);
+  height: rem(22);
+  background: url(../images/common/calender.svg) no-repeat center center / contain;
+  transform: translateY(-50%);
 }

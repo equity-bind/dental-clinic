@@ -1,7 +1,7 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
 
-  var topBtn = $(".pagetop");
+  let topBtn = $(".pagetop");
   topBtn.hide();
 
   // ボタンの表示設定
@@ -40,6 +40,40 @@ jQuery(function ($) {
       $(".p-header__link").addClass("is-open");
       $(this).addClass("is-open");
     }
+  });
+  // モーダル画面
+
+  $(".js-modal-open").on("click", function () {
+    $(".js-modal").fadeIn();
+    return false;
+  });
+  $(".js-modal__close").on("click", function () {
+    $(".js-modal").fadeOut();
+    return false;
+  });
+
+  // カレンダー(flatpickrライブラリ)
+  flatpickr("#js-datepicker", {
+    mode: "range",
+    minDate: "today",
+    dateFormat: "Y-m-d",
+    disable: [
+      function (date) {
+        // disable every multiple of 8
+        return !(date.getDate() % 8);
+      },
+    ],
+  });
+
+  const swiper = new Swiper(".swiper", {
+    loop: true,
+    effect: "fade",
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    speed: 2000,
+    allowTouchMove: false,
   });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
