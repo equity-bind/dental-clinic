@@ -1,0 +1,18 @@
+@use "global" as *;
+
+
+.c-section-title__img-wrapper {
+  margin: 0 auto;
+  width: rem(40);
+}
+
+.c-section-title__img {
+  width: 100%;
+}
+
+.c-section-title__heading {
+  text-align: center;
+  font-size: rem(36);
+  line-height: 1;
+  padding-top: rem(20);
+}
