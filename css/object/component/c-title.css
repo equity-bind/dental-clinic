@@ -19,15 +19,21 @@ body {
   }
 }
 
-.title__img-wrapper {
+.c-title__img-wrapper {
   text-align: center;
   width: 40px;
   width: 2.5rem;
 }
 
-.title {
+.c-title__img {
+  width: 100%;
+}
+
+.c-title {
   font-size: 36px;
   font-size: 2.25rem;
   line-height: 1;
+  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 /*# sourceMappingURL=c-title.css.map */
