@@ -76,6 +76,19 @@ jQuery(function ($) {
     allowTouchMove: false,
   });
 
+  // タブ開閉
+  $(".c-tab__item").on("click", function () {
+    $(".is-active").removeClass("is-active");
+    
+    $(this).addClass("is-active");
+    $(".show").removeClass("show");
+
+    let index = $(this).index();
+
+    $(".p-news__items-wrapper").eq(index).fadeIn(300).addClass("show");
+    $(".p-news__items-wrapper").not(".show").hide();
+  });
+
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
   $(document).on("click", 'a[href*="#"]', function () {

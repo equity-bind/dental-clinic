@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.c-tab {
+  width: rem(200);
+  display: flex;
+  justify-content: center;
+  margin: rem(46) auto 0;
+}
+
+.c-tab__item {
+  // float: left;
+  margin-right: rem(53);
+}
+
+.c-tab__item.is-active {
+  border-bottom: 1px solid #707070;
+}
+
+.c-tab__item + .c-tab__item {
+  margin-right: initial;
+}
