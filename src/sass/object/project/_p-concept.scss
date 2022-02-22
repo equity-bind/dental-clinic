@@ -5,10 +5,16 @@
 }
 
 .p-concept__inner {
+  max-width: rem(600);
+  width: 100%;
+  margin: 0 auto;
   padding-top: rem(149);
   padding-left: $padding-sp;
   padding-right: $padding-sp;
   padding-bottom: rem(168);
+  @include mq("md") {
+    max-width: initial;
+  }
 }
 
 .p-concept__title {

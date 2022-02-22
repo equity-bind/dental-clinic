@@ -32,7 +32,6 @@
         <div class="p-header__wrapper">
           <h1 class="p-header__logo">
             <a href="#" class="p-header__link"></a>
-            <!-- <img src="images/common/top-header-logo.svg" alt="ヘッダーロゴ" /> </a> -->
             <!-- /.logo__link -->
           </h1>
           <!-- /.p-header__logo -->
@@ -358,7 +357,7 @@
     <!-- /.p-plan -->
     <section class="p-news">
       <div class="p-news__container">
-        <div class="p-news__inner inner">
+        <div class="p-news__inner l-inner">
           <div class="c-section-title">
             <div class="c-section-title__img-wrapper">
               <img src="images/common/logo.svg " alt="セクションタイトルロゴ" class="c-section-title__img" />
@@ -369,9 +368,15 @@
           </div>
           <!-- /.c-section-title -->
           <ul class="c-tab">
-            <li class="c-tab__item is-active">営業情報</li>
+            <li class="c-tab__item is-active">
+              <a href="#" class="c-tab__link"> 営業情報 </a
+              ><!-- /.c-tab__link -->
+            </li>
             <!-- /.c-tab__item -->
-            <li class="c-tab__item">その他</li>
+            <li class="c-tab__item">
+              <a href="#" class="c-tab__link">その他</a
+              ><!-- /.c-tab__link -->
+            </li>
             <!-- /.c-tab__item -->
           </ul>
           <!-- /.c-tab -->
@@ -561,18 +566,109 @@
       <!-- /.p-news__container -->
     </section>
     <!-- /.p-news -->
-    <section class="access">
-
-      <!-- 地図の画像↓｀｀｀｀｀｀｀｀ -->
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24316.854160705716!2d139.60271955107078!3d38.63255237436238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1645483255495!5m2!1sja!2sjp"
-        width="792"
-        height="592"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
+    <section class="p-access">
+      <div class="p-access__container">
+        <div class="p-access__inner l-inner">
+          <div class="c-section-title">
+            <div class="c-section-title__img-wrapper">
+              <img src="images/common/logo.svg " alt="セクションタイトルロゴ" class="c-section-title__img" />
+            </div>
+            <!-- /.c-section-title__img-wrapper -->
+            <h4 class="c-section-title__heading">アクセス</h4>
+            <!-- /.c-section-title__heading -->
+          </div>
+          <!-- /.c-section-title -->
+          <div class="p-access__content">
+            <div class="p-access__img-wrapper"><img src="images/common/acess.jpg" alt="旅館外観 " class="p-access__img" /></div>
+            <!-- /.p-access__img-wrapper -->
+            <div class="p-access__body">
+              <p class="p-access__address-title">住所</p>
+              <!-- /.p-access__address-title -->
+              <p class="p-access__address-text">〒000-0000<br />山形県鶴岡市xxxxxxxxxx</p>
+              <!-- /.p-access__address-postcode -->
+              <p class="p-access__address-title">TEL/FAX</p>
+              <!-- /.p-access__address-title -->
+              <p class="p-access__address-text">000-0000-0000/00-0000-0000</p>
+              <!-- /.p-access__address-text -->
+              <p class="p-access__address-title">営業時間</p>
+              <!-- /.p-access__address-title -->
+              <time class="p-access__address-text">14:00-23:00</time
+              ><!-- /.p-access__address-text -->
+              <p class="p-access__address-text">＊4名以上のご予約の場合は、最寄り駅の「鶴岡駅」より送迎が可能ですので、 ご連絡ください。</p>
+              <!-- /.p-access__address-text -->
+            </div>
+            <!-- /.p-access__body -->
+          </div>
+          <!-- /.p-access__content -->
+          <div class="p-access__map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24316.854160705716!2d139.60271955107078!3d38.63255237436238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1645483255495!5m2!1sja!2sjp"
+              width="792"
+              height="592"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <!-- /.p-access__map-wrap -->
+        </div>
+        <!-- /.p-access__inner -->
+      </div>
+      <!-- /.p-access__container -->
     </section>
-    <!-- /.access -->
+    <!-- /.p-access -->
+    <footer class="p-footer">
+      <div class="p-footer__bg-container">
+        <nav class="p-footer-nav">
+          <ul class="p-footer-nav__items">
+            <li class="p-footer-nav__item">
+              <a href="#" class="p-footer-nav__link">温泉</a
+              ><!-- /.__link p-footer-nav__link -->
+            </li>
+            <!-- /.__item p-footer-nav__item -->
+            <li class="p-footer-nav__item">
+              <a href="#" class="p-footer-nav__link">お料理</a
+              ><!-- /.p-footer-nav__link -->
+            </li>
+            <!-- /.__item p-footer-nav__item -->
+            <li class="p-footer-nav__item">
+              <a href="#" class="p-footer-nav__link">お部屋</a
+              ><!-- /.p-footer-nav__link -->
+            </li>
+            <!-- /.p-footer-nav__item -->
+          </ul>
+          <!-- /. p-footer-nav__items -->
+        </nav>
+        <!-- /.pc-nav -->
+        <div class="p-footer__logo">
+          <a href="#" class="p-footer__link">
+            <img src="images/common/footer-logo.svg" alt="フッターロゴ" />
+          </a>
+          <!-- /.logo__link -->
+        </div>
+        <!-- /.p-footer__logo -->
+        <div class="p-footer__address-wrapper">
+          <p class="p-footer__postcode">〒000-0000</p>
+          <!-- /.p-footer__postcode -->
+          <p class="p-footer__address">山形県鶴岡市xxxxxxxxxxx</p>
+          <!-- /.p-footer__address -->
+        </div>
+        <!-- /.p-footer__address-wrapper -->
+        <div class="p-footer__tel-wrapper">
+          <p class="p-footer__tel">TEL.000-0000-0000</p>
+          <!-- /.p-footer__tel -->
+          <p class="p-footer__fax">FAX.00-0000-0000</p>
+          <!-- /.p-footer__fax -->
+        </div>
+        <!-- /.p-footer__tel-wrapper -->
+      </div>
+      <!-- /.p-footer__bg-container -->
+      <div class="p-footer__copyright-container">
+        <small class="p-footer__copyright">Copyright &copy; 石井花壇 All Rights Reserved.</small
+        ><!-- /.p-footer__copyright -->
+      </div>
+      <!-- /.p-footer__copyright-container -->
+    </footer>
+    <!-- /.p-footer -->
   </body>
 </html>

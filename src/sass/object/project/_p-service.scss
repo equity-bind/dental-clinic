@@ -9,9 +9,13 @@
 }
 
 .p-service__item {
+  max-width: rem(600);
+  width: 100%;
+  margin: 0 auto;
   padding-left: $padding-sp;
   padding-right: $padding-sp;
   @include mq("md") {
+    max-width: initial;
     display: flex;
     padding-left: initial;
     padding-right: initial;
@@ -56,8 +60,6 @@
 .p-service__body--row_reverse {
   margin-right: 7.1354167vw;
 }
-
-
 
 .p-service__button {
   text-align: center;

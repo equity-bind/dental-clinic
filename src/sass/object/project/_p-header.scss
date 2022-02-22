@@ -1,16 +1,17 @@
 @use "global" as *;
 .p-header {
   height: rem(80);
+  transition: background-color 0.5s;
 }
 
 .p-header__inner {
   height: inherit;
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
   @include mq("md") {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: $padding-sp;
-    padding-right: $padding-sp;
   }
 }
 .p-header__wrapper {
@@ -34,6 +35,7 @@
   }
 }
 .p-header__link.is-open {
+  transition: background 0.5s;
   background: url(../images/common/sub-header-logo.svg) no-repeat center center/contain;
 }
 
@@ -73,6 +75,7 @@
   display: none;
   @include mq("md") {
     display: block;
+    transition: color 0.5s;
     color: $white;
   }
 }

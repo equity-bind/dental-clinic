@@ -27,6 +27,21 @@ jQuery(function ($) {
     return false;
   });
 
+  // ヘッダー固定(ファーストビュー超えたら背景変える)
+  $(window).scroll(function () {
+    let topHeight = $(".p-mv").outerHeight(true);
+    if ($(window).scrollTop() > topHeight) {
+      $(".p-header").css("background-color", "#fff");
+      $(".p-header__link").addClass("is-open");
+      $(".pc-nav").css("color", "#000");
+      $(".c-hamburger span").css("background-color", "#000");
+    } else {
+      $(".p-header").css("background-color", "transparent");
+      $(".p-header__link").removeClass("is-open");
+      $(".pc-nav").css("color", "#fff");
+      $(".c-hamburger span").css("background-color", "#fff");
+    }
+  });
   //ドロワーメニュー
   $(".js-hamburger").on("click", function () {
     if ($(".js-hamburger").hasClass("is-open")) {
@@ -64,7 +79,7 @@ jQuery(function ($) {
       },
     ],
   });
-
+  // ズームアップしながら画面切り替え
   const swiper = new Swiper(".swiper", {
     loop: true,
     effect: "fade",
@@ -79,7 +94,7 @@ jQuery(function ($) {
   // タブ開閉
   $(".c-tab__item").on("click", function () {
     $(".is-active").removeClass("is-active");
-    
+
     $(this).addClass("is-active");
     $(".show").removeClass("show");
 
@@ -87,6 +102,7 @@ jQuery(function ($) {
 
     $(".p-news__items-wrapper").eq(index).fadeIn(300).addClass("show");
     $(".p-news__items-wrapper").not(".show").hide();
+    return false;
   });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
