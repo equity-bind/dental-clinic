@@ -27,35 +27,43 @@ jQuery(function ($) {
     return false;
   });
 
+  let topHeight = $(".p-mv").outerHeight(true);
   // ヘッダー固定(ファーストビュー超えたら背景変える)
   $(window).scroll(function () {
-    let topHeight = $(".p-mv").outerHeight(true);
     if ($(window).scrollTop() > topHeight) {
-      $(".p-header").css("background-color", "#fff");
-      $(".p-header__link").addClass("is-open");
+      $(".js-header").css("background-color", "rgba(255,255,255,1)");
+      $(".p-header__link").addClass("is-scrolled");
       $(".pc-nav").css("color", "#000");
-      $(".c-hamburger span").css("background-color", "#000");
+      $(".c-hamburger span").addClass("is-scrolled");
     } else {
-      $(".p-header").css("background-color", "transparent");
-      $(".p-header__link").removeClass("is-open");
+      $(".js-header").css("background-color", "rgba(255,255,255,0)");
+      $(".p-header__link").removeClass("is-scrolled");
       $(".pc-nav").css("color", "#fff");
-      $(".c-hamburger span").css("background-color", "#fff");
+      $(".c-hamburger span").removeClass("is-scrolled");
     }
   });
   //ドロワーメニュー
   $(".js-hamburger").on("click", function () {
     if ($(".js-hamburger").hasClass("is-open")) {
-      // $(".js-drawer-menu").removeClass("is-open");
+      // メニューボタンクリックでドロワー閉じる
       $(".js-drawer-menu").fadeOut();
-      $(".p-header__link").removeClass("is-open");
       $(this).removeClass("is-open");
+      $(".p-sub-header__link").removeClass("is-open");
     } else {
-      // $(".js-drawer-menu").addClass("is-open");
+      // メニューボタンクリックでドロワー開く
       $(".js-drawer-menu").fadeIn();
-      $(".p-header__link").addClass("is-open");
       $(this).addClass("is-open");
+      $(".p-sub-header__link").addClass("is-open");
+    }
+    if ($(".p-header__link").hasClass("is-scrolled") && $(".js-hamburger").hasClass("is-open")) {
+      // スクロールしていて、ヘッダーロゴが黒い状態の段階且つメニューボタンを開く前の段階の場合
+      $(".p-header__link").removeClass("is-scrolled");
+    } else if ($(window).scrollTop() > topHeight && !$(".js-hamburger").hasClass("is-open")) {
+      // ドロワーメニュー閉じる時、スクロールされている状態の場合、is-scrolledクラスを付加する
+      $(".p-header__link").addClass("is-scrolled");
     }
   });
+
   // モーダル画面
 
   $(".js-modal-open").on("click", function () {

@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.c-breadcrumb__list {
+  margin-top: rem(36);
+}
+.c-breadcrumb__item {
+  display: inline;
+}
+
+.c-breadcrumb__item::after {
+  content: ">";
+  padding: 0 rem(9);
+}
+
+.c-breadcrumb__item:last-child::after {
+  content: "";
+}

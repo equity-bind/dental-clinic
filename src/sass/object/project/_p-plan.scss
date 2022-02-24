@@ -22,13 +22,18 @@
 }
 
 .p-plan__item {
-  margin-top: rem(94);
   @include mq("md") {
     width: calc((100% - (rem(94) * 2)) / 3);
     margin-right: rem(94);
   }
 }
 
+.p-plan__item + .p-plan__item {
+  margin-top: rem(94);
+  @include mq("md") {
+    margin-top: initial;
+  }
+}
 .p-plan__item:nth-child(3n) {
   @include mq("md") {
     margin-right: 0;

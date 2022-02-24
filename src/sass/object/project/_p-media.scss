@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.p-media {
+  margin-top: rem(78);
+  margin-bottom: rem(150);
+}
+
+.p-media__item {
+  max-width: rem(600);
+  width: 100%;
+  margin: 0 auto;
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
+  @include mq("md") {
+    max-width: initial;
+    display: flex;
+    padding-left: initial;
+    padding-right: initial;
+  }
+}
+
+.p-media__item + .p-media__item {
+  @include mq("md") {
+    margin-top: rem(141);
+  }
+}
+
+.p-media__img-wrapper {
+  @include mq("md") {
+    // % = 高さ / 幅 * 100
+    position: relative;
+    z-index: 1;
+    flex: 0 1 44.4915254%;
+  }
+}
+
+.p-media__img {
+  width: 100%;
+}
+
+.p-media__body {
+  padding-top: rem(60);
+  padding-right: rem(68);
+  padding-bottom: rem(110);
+  @include mq("md") {
+    flex: 1;
+    // margin-left = カンプ上のmargin-left幅 / インナー幅 * 100%
+    background: url(../images/common/bg.jpg) no-repeat center center / cover;
+    position: relative;
+    top: rem(57);
+    // 158pxずらす
+    width: calc(55.5084746% + rem(158));
+    margin-left: rem(-158);
+    padding-left: rem(238);
+  }
+}
+.p-media__title {
+  margin-top: rem(1);
+  font-size: rem(24);
+  font-weight: $medium;
+}
+
+.p-media__text {
+  margin-top: rem(52);
+  line-height: 2;
+}
+
+.p-media__text--small {
+  font-size: rem(14);
+  margin-top: rem(52);
+}
+.p-media--row_reverse {
+  flex-direction: row-reverse;
+}
+
+.p-media__body--row_reverse {
+  // 逆位置になるので、margin-left初期化、margin-rightに同じ幅記述
+  margin-left: initial;
+  @include mq("md") {
+    margin-right: rem(-158);
+    padding-right: rem(290);
+    margin-left: initial;
+    padding-left: rem(60);
+  }
+}

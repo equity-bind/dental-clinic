@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
+    <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。 伝統的「和」の息づく空間で、至極のひとときをお過ごしください。" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="l-header p-header p-sub-header">
+      <div class="p-header__inner">
+        <div class="p-header__wrapper">
+          <h1 class="p-header__logo">
+            <a href="index.html" class="p-sub-header__link"></a>
+            <!-- /.logo__link -->
+          </h1>
+          <!-- /.p-header__logo -->
+          <button class="c-sub-hamburger c-hamburger js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <!-- /.c-hamburger -->
+          <nav class="sp-nav js-drawer-menu">
+            <ul class="sp-nav__items">
+              <li class="sp-nav__item sp-nav__item--yellow">
+                <a href="#" class="sp-nav__link c-button--reserve_sp js-modal-open">宿泊予約</a
+                ><!-- /.sp-nav__link -->
+              </li>
+              <!-- /.sp-nav__item -->
+              <li class="sp-nav__item">
+                <a href="#" class="sp-nav__link">お部屋</a
+                ><!-- /.sp-nav__link -->
+              </li>
+              <!-- /.sp-nav__item -->
+              <li class="sp-nav__item">
+                <a href="#" class="sp-nav__link">お料理</a
+                ><!-- /.sp-nav__link -->
+              </li>
+              <!-- /.sp-nav__item -->
+              <li class="sp-nav__item">
+                <a href="#" class="sp-nav__link">温泉</a
+                ><!-- /.sp-nav__link -->
+              </li>
+              <!-- /.sp-nav__item -->
+            </ul>
+            <!-- /.sp-nav__items -->
+          </nav>
+          <!-- /.sp-nav -->
+          <nav class="pc-nav">
+            <ul class="pc-nav__items">
+              <li class="pc-nav__item">
+                <a href="#" class="p-sub-nav__link pc-nav__link">お部屋</a
+                ><!-- /.pc-nav__link -->
+              </li>
+              <!-- /.pc-nav__item -->
+              <li class="pc-nav__item">
+                <a href="#" class="p-sub-nav__link pc-nav__link">お料理</a
+                ><!-- /.pc-nav__link -->
+              </li>
+              <!-- /.pc-nav__item -->
+              <li class="pc-nav__item">
+                <a href="#" class="p-sub-nav__link pc-nav__link">温泉</a
+                ><!-- /.pc-nav__link -->
+              </li>
+              <!-- /.pc-nav__item -->
+            </ul>
+            <!-- /.pc-nav__items -->
+          </nav>
+          <!-- /.pc-nav -->
+        </div>
+        <!-- /.p-header__wrapper -->
+        <a href="#" class="c-button--reserve js-modal-open">宿泊予約</a
+        ><!-- /.pc-nav__link--reserve -->
+        <div class="p-modal js-modal">
+          <div class="p-modal__bg js-modal__close"></div>
+          <!-- /.p-modal__bg js-modal__close -->
+          <div class="p-modal__body">
+            <a href="#" class="p-modal__close js-modal__close"></a>
+            <!-- /.p-modal__close -->
+            <div class="p-modal__inner">
+              <h3 class="p-modal__title">宿泊予約</h3>
+              <!-- /.p-modal__title -->
+              <form class="p-modal__form" action="#">
+                <div class="p-modal__item">
+                  <label class="p-modal__label" for="name">お名前</label><br />
+                  <input type="text" name="your-name" id="name" placeholder="例：石井正悟" required /><br />
+                </div>
+                <!-- /.p-modal__item -->
+                <div class="p-modal__item">
+                  <label class="p-modal__label" for="email">メールアドレス</label><br />
+                  <input type="text" name="your-email" id="email" placeholder="例：Example@example.com" required /><br />
+                </div>
+                <!-- /.p-modal__item -->
+                <div class="p-modal__item">
+                  <label class="p-modal__label" for="plan">ご希望プラン（空いているプランのみ表示されます）</label><br />
+                  <select name="selected_plan" id="plan" required>
+                    <option value="">プランを選択してください</option>
+                    <option value="①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                    <option value="②平日に優雅に楽しむ、特別宿泊プラン">②平日に優雅に楽しむ、特別宿泊プラン</option>
+                    <option value="③絶景貸切露天と個室会席を満喫できるファミリープラン">③絶景貸切露天と個室会席を満喫できるファミリープラン</option></select
+                  ><!-- /# -->
+                </div>
+                <!-- /.p-modal__item -->
+                <div class="p-modal__item">
+                  <label class="p-modal__label" for="js-datepicker">日時選択</label><br />
+                  <input type="text" name="datepicker" id="js-datepicker" placeholder="日時を選択してください" required />
+                </div>
+                <!-- /.p-modal__item -->
+                <div class="p-modal__item--submit">
+                  <input type="submit" value="送信する" />
+                </div>
+                <!-- /.p-modal__item--submit -->
+              </form>
+              <!-- /.p-modal__form -->
+            </div>
+            <!-- /.p-modal__inner -->
+          </div>
+          <!-- /.p-modal__content -->
+        </div>
+        <!-- /.p-modal -->
+      </div>
+      <!-- /.p-header__inner -->
+    </header>
+    <!-- /.l-header p-header -->
+    <div class="p-sub-mv" style="background-image: url('images/common/oheya-header.jpg')">
+      <div class="p-sub-mv__inner">
+        <h2 class="p-sub-mv__title">お部屋</h2>
+        <!-- /.p-sub-mv__title -->
+      </div>
+      <!-- /.p-sub-mv__inner -->
+    </div>
+    <!-- /.p-sub-mv -->
+    <section class="p-room">
+      <div class="p-room__inner l-inner">
+        <ol class="c-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="index.html"><span itemprop="name">トップ</span></a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <!-- /.c-c-breadcrumb__item -->
+          <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="#"><span itemprop="name">お部屋</span></a>
+            <meta itemprop="position" content="2" />
+          </li>
+          <!-- /.c-c-breadcrumb__item -->
+        </ol>
+        <!-- /.c-breadcrumb__list -->
+        <h3 class="p-room__title">
+          創業より受け継がれてきた石井花壇の和の造り<br />
+          温海の雄大な絶景を堪能していただけるように設計された客室<br />
+          ゆるやかに流れ行く時間に身を委ねて
+        </h3>
+        <!-- /.p-room__title -->
+        <div class="p-media">
+          <div class="p-media__items">
+            <div class="p-media__item">
+              <div class="p-media__img-wrapper">
+                <img src="images/common/oheya01.jpg" alt="温泉付き客室" class="p-media__img" />
+              </div>
+              <!-- /.p-media__img-wrapper -->
+              <div class="p-media__body">
+                <h4 class="p-media__title">温泉付き客室</h4>
+                <!-- /.p-media__title -->
+                <p class="p-media__text">
+                  温海の源泉かけ流し露天風呂付き客室になります。<br class="pc-br" />
+                  あなただけの上質な安らぎのひとときを。
+                </p>
+                <!-- /.p-media__text -->
+                <p class="p-media__text--small">＊部屋数に限りがございます。<br />＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。</p>
+                <!-- /.p-media__text--small -->
+              </div>
+              <!-- /.p-media__body -->
+            </div>
+            <!-- /.p-media__item .p-template -->
+            <div class="p-media__item p-media--row_reverse">
+              <div class="p-media__img-wrapper">
+                <img src="images/common/oheya02.jpg" alt="庭園付き客室" class="p-media__img" />
+              </div>
+              <!-- /.p-media__img-wrapper -->
+              <div class="p-media__body p-media__body--row_reverse">
+                <h4 class="p-media__title">庭園付き客室</h4>
+                <!-- /.p-media__title -->
+                <p class="p-media__text">
+                  庭園付きの客室になります。<br />
+                  お庭を見ながら、ほっとするひとときをお過ごしください。
+                </p>
+                <!-- /.p-media__text -->
+                <p class="p-media__text--small">
+                  ＊お庭は複数のお客様と囲む形になります。<br />
+                  ＊部屋数に限りがあります。<br />
+                  ＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。
+                </p>
+                <!-- /.p-media__text--small -->
+              </div>
+              <!-- /.p-media__body -->
+            </div>
+            <!-- /.p-media__item .p-template -->
+            <div class="p-media__item">
+              <div class="p-media__img-wrapper">
+                <img src="images/common/oheya03.jpg" alt="一般客室" class="p-media__img" />
+              </div>
+              <!-- /.p-media__img-wrapper -->
+              <div class="p-media__body">
+                <h4 class="p-media__title">一般客室</h4>
+                <!-- /.p-media__title -->
+                <p class="p-media__text">最もベーシックな客室になります。伝統の中にモダンさを取り入れた 内装となっており、とても過ごしやすくしていただけます。</p>
+                <!-- /.p-media__text -->
+                <p class="p-media__text--small">＊全室お部屋より日本海を望むことができます。</p>
+                <!-- /.p-media__text--small -->
+              </div>
+              <!-- /.p-media__body -->
+            </div>
+            <!-- /.p-media__item .p-template -->
+          </div>
+          <!-- /.p-media__items -->
+        </div>
+        <!-- /.p-media -->
+      </div>
+      <!-- /.p-room__inner l-inner -->
+    </section>
+    <!-- /.p-room -->
+
+    <footer class="p-footer">
+      <div class="p-footer__bg-container">
+        <nav class="p-footer-nav">
+          <ul class="p-footer-nav__items">
+            <li class="p-footer-nav__item">
+              <a href="#" class="p-footer-nav__link">温泉</a
+              ><!-- /.__link p-footer-nav__link -->
+            </li>
+            <!-- /.__item p-footer-nav__item -->
+            <li class="p-footer-nav__item">
+              <a href="#" class="p-footer-nav__link">お料理</a
+              ><!-- /.p-footer-nav__link -->
+            </li>
+            <!-- /.__item p-footer-nav__item -->
+            <li class="p-footer-nav__item">
+              <a href="#" class="p-footer-nav__link">お部屋</a
+              ><!-- /.p-footer-nav__link -->
+            </li>
+            <!-- /.p-footer-nav__item -->
+          </ul>
+          <!-- /. p-footer-nav__items -->
+        </nav>
+        <!-- /.pc-nav -->
+        <div class="p-footer__logo">
+          <a href="#" class="p-footer__link">
+            <img src="images/common/footer-logo.svg" alt="フッターロゴ" />
+          </a>
+          <!-- /.logo__link -->
+        </div>
+        <!-- /.p-footer__logo -->
+        <div class="p-footer__address-wrapper">
+          <p class="p-footer__postcode">〒000-0000</p>
+          <!-- /.p-footer__postcode -->
+          <p class="p-footer__address">山形県鶴岡市xxxxxxxxxxx</p>
+          <!-- /.p-footer__address -->
+        </div>
+        <!-- /.p-footer__address-wrapper -->
+        <div class="p-footer__tel-wrapper">
+          <p class="p-footer__tel">TEL.000-0000-0000</p>
+          <!-- /.p-footer__tel -->
+          <p class="p-footer__fax">FAX.00-0000-0000</p>
+          <!-- /.p-footer__fax -->
+        </div>
+        <!-- /.p-footer__tel-wrapper -->
+      </div>
+      <!-- /.p-footer__bg-container -->
+      <div class="p-footer__copyright-container">
+        <small class="p-footer__copyright">Copyright &copy; 石井花壇 All Rights Reserved.</small
+        ><!-- /.p-footer__copyright -->
+      </div>
+      <!-- /.p-footer__copyright-container -->
+    </footer>
+    <!-- /.p-footer -->
+  </body>
+</html>

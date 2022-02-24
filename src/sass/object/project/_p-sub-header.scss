@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.p-sub-header {
+  background-color: $white;
+}
+
+.p-sub-header__link {
+  display: block;
+  width: rem(150);
+  height: inherit;
+  position: relative;
+  background: url(../images/common/sub-header-logo.svg) no-repeat center center / contain;
+  z-index: 999;
+  @include mq("md") {
+    width: rem(200);
+  }
+}
+.p-sub-header__link.is-open {
+  opacity: 0;
+}
+
+.p-sub-nav__link {
+  color: $black;
+}

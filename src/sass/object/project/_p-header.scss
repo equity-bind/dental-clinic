@@ -34,7 +34,7 @@
     width: rem(200);
   }
 }
-.p-header__link.is-open {
+.p-header__link.is-scrolled {
   transition: background 0.5s;
   background: url(../images/common/sub-header-logo.svg) no-repeat center center/contain;
 }

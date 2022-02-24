@@ -45,4 +45,8 @@
   &:nth-child(3) {
     top: rem(20);
   }
+  &.is-scrolled{
+    background-color: $black;
+  }
 }
+
