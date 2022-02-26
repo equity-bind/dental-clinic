@@ -820,7 +820,7 @@ select::-ms-expand {
 }
 
 .p-header__logo--bg_top a {
-  background: url(../images/common/top-header-logo.svg) no-repeat center center/contain;
+  background: url(../images/top/top-header-logo.svg) no-repeat center center/contain;
 }
 
 .p-header__logo--bg_top a.is-scrolled {
@@ -847,7 +847,7 @@ p-header__pc-nav--color_sub {
 }
 
 .p-header__logo--bg_sub a.is-open {
-  background: url(../images/common/top-header-logo.svg) no-repeat center center/contain;
+  background: url(../images/top/top-header-logo.svg) no-repeat center center/contain;
 }
 
 .p-media__item {

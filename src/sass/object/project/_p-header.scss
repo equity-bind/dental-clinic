@@ -37,7 +37,7 @@
   }
 }
 .p-header__logo--bg_top a {
-  background: url(../images/common/top-header-logo.svg) no-repeat center center/contain;
+  background: url(../images/top/top-header-logo.svg) no-repeat center center/contain;
 }
 .p-header__logo--bg_top a.is-scrolled {
   transition: background 0.5s;
@@ -58,5 +58,5 @@ p-header__pc-nav--color_sub {
   background: url(../images/common/sub-header-logo.svg) no-repeat center center / contain;
 }
 .p-header__logo--bg_sub a.is-open {
-  background: url(../images/common/top-header-logo.svg) no-repeat center center/contain;
+  background: url(../images/top/top-header-logo.svg) no-repeat center center/contain;
 }
