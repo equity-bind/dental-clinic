@@ -66,55 +66,41 @@
         <a href="#" class="c-button--reserve js-modal-open">宿泊予約</a>
         <div class="p-modal js-modal">
           <div class="p-modal__bg js-modal__close"></div>
-          <!-- /.p-modal__bg js-modal__close -->
           <div class="p-modal__body">
             <a href="#" class="p-modal__close js-modal__close"></a>
-            <!-- /.p-modal__close -->
             <div class="p-modal__inner">
               <h2 class="p-modal__title">宿泊予約</h2>
-              <!-- /.p-modal__title -->
               <form class="p-modal__form" action="#">
                 <div class="p-modal__item">
                   <label class="p-modal__label" for="name">お名前</label><br />
                   <input type="text" name="your-name" id="name" placeholder="例：石井正悟" required /><br />
                 </div>
-                <!-- /.p-modal__item -->
                 <div class="p-modal__item">
                   <label class="p-modal__label" for="email">メールアドレス</label><br />
                   <input type="text" name="your-email" id="email" placeholder="例：Example@example.com" required /><br />
                 </div>
-                <!-- /.p-modal__item -->
                 <div class="p-modal__item">
                   <label class="p-modal__label" for="plan">ご希望プラン（空いているプランのみ表示されます）</label><br />
                   <select name="selected_plan" id="plan" required>
                     <option value="">プランを選択してください</option>
                     <option value="①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
                     <option value="②平日に優雅に楽しむ、特別宿泊プラン">②平日に優雅に楽しむ、特別宿泊プラン</option>
-                    <option value="③絶景貸切露天と個室会席を満喫できるファミリープラン">③絶景貸切露天と個室会席を満喫できるファミリープラン</option></select
-                  ><!-- /# -->
+                    <option value="③絶景貸切露天と個室会席を満喫できるファミリープラン">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+                  </select>
                 </div>
-                <!-- /.p-modal__item -->
                 <div class="p-modal__item">
                   <label class="p-modal__label" for="js-datepicker">日時選択</label><br />
                   <input type="text" name="datepicker" id="js-datepicker" placeholder="日時を選択してください" required />
                 </div>
-                <!-- /.p-modal__item -->
                 <div class="p-modal__item--submit">
                   <input type="submit" value="送信する" />
                 </div>
-                <!-- /.p-modal__item--submit -->
               </form>
-              <!-- /.p-modal__form -->
             </div>
-            <!-- /.p-modal__inner -->
           </div>
-          <!-- /.p-modal__content -->
         </div>
-        <!-- /.p-modal -->
       </div>
-      <!-- /.p-header__inner -->
     </header>
-    <!-- /.l-header p-header -->
     <div class="l-mv p-mv">
       <div class="swiper">
         <div class="swiper-wrapper">
@@ -450,7 +436,7 @@
     </section>
     <footer class="p-footer">
       <div class="p-footer__bg-container">
-        <nav class="p-footer-nav">
+        <nav class="p-footer__footer-nav p-footer-nav">
           <ul class="p-footer-nav__items">
             <li class="p-footer-nav__item">
               <a href="spa.html">温泉</a>
@@ -467,9 +453,7 @@
         </nav>
 
         <div class="p-footer__logo">
-          <a href="#">
-            <img src="images/common/footer-logo.svg" alt="フッターロゴ" />
-          </a>
+          <a href="#"><img src="images/common/footer-logo.svg" alt="フッターロゴ" /></a>
         </div>
         <div class="p-footer__address-wrapper">
           <p class="p-footer__postcode">〒000-0000</p>
