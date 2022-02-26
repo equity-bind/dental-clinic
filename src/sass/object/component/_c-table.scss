@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.c-table {
+  border-collapse: collapse;
+}
+
+.c-table__title {
+  font-size: rem(15);
+  font-weight: $medium;
+  text-align: left;
+  padding-top: rem(17.5);
+  padding-bottom: rem(17.5);
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  white-space: nowrap;
+}
+
+.c-table__description {
+  font-size: rem(15);
+  line-height: 1.28;
+  padding-top: rem(17.5);
+  padding-left: rem(190);
+  padding-bottom: rem(17.5);
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}

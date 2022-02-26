@@ -32,6 +32,7 @@ $black: #000;
 $white: #fff;
 $yellow: #978f10;
 $light-gray: #f6f6f6;
+$border-color: #e7e7e7;
 
 body {
   font-family: $base-font-family;
@@ -98,4 +99,3 @@ $mediaquerys: (
   padding: 1.25em 2.75em;
   border: rem(1) solid #707070;
 }
-

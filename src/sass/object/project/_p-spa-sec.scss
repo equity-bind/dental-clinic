@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.p-spa-sec__container {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.p-spa-sec__inner {
+  max-width: rem(880);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.p-spa-sec__content {
+  padding-top: rem(95.5);
+  padding-bottom: rem(74);
+}
+
+.p-spa-sec__main-title {
+  font-size: rem(26);
+  font-weight: $medium;
+  text-align: center;
+}
+
+.p-spa-sec__table {
+  margin-top: rem(51.5);
+}
+
