@@ -32,13 +32,13 @@ jQuery(function ($) {
   $(window).scroll(function () {
     if ($(window).scrollTop() > topHeight) {
       $(".js-header").css("background-color", "rgba(255,255,255,1)");
-      $(".p-header__link").addClass("is-scrolled");
-      $(".pc-nav").css("color", "#000");
+      $(".p-header__logo a").addClass("is-scrolled");
+      $(".p-pc-nav").css("color", "#000");
       $(".c-hamburger span").addClass("is-scrolled");
     } else {
       $(".js-header").css("background-color", "rgba(255,255,255,0)");
-      $(".p-header__link").removeClass("is-scrolled");
-      $(".pc-nav").css("color", "#fff");
+      $(".p-header__logo a").removeClass("is-scrolled");
+      $(".p-pc-nav").css("color", "#fff");
       $(".c-hamburger span").removeClass("is-scrolled");
     }
   });
@@ -48,19 +48,19 @@ jQuery(function ($) {
       // メニューボタンクリックでドロワー閉じる
       $(".js-drawer-menu").fadeOut();
       $(this).removeClass("is-open");
-      $(".p-sub-header__link").removeClass("is-open");
+      $(".js-header__logo").css("opacity", "1");
     } else {
       // メニューボタンクリックでドロワー開く
       $(".js-drawer-menu").fadeIn();
       $(this).addClass("is-open");
-      $(".p-sub-header__link").addClass("is-open");
+      $(".js-header__logo").css("opacity", "0");
     }
-    if ($(".p-header__link").hasClass("is-scrolled") && $(".js-hamburger").hasClass("is-open")) {
+    if ($(".p-header__logo a").hasClass("is-scrolled") && $(".js-hamburger").hasClass("is-open")) {
       // スクロールしていて、ヘッダーロゴが黒い状態の段階且つメニューボタンを開く前の段階の場合
-      $(".p-header__link").removeClass("is-scrolled");
+      $(".p-header__logo a").removeClass("is-scrolled");
     } else if ($(window).scrollTop() > topHeight && !$(".js-hamburger").hasClass("is-open")) {
       // ドロワーメニュー閉じる時、スクロールされている状態の場合、is-scrolledクラスを付加する
-      $(".p-header__link").addClass("is-scrolled");
+      $(".p-header__logo a").addClass("is-scrolled");
     }
   });
 
@@ -101,12 +101,12 @@ jQuery(function ($) {
 
   // タブ開閉
   $(".c-tab__item").on("click", function () {
-    $(".is-active").removeClass("is-active");
+    $(".c-tab__item a").removeClass("is-active");
 
-    $(this).addClass("is-active");
-    $(".show").removeClass("show");
+    $(this).children("a").addClass("is-active");
+    $(".p-news__items-wrapper").removeClass("show");
 
-    let index = $(this).index();
+    let index = $(".c-tab__item").index(this);
 
     $(".p-news__items-wrapper").eq(index).fadeIn(300).addClass("show");
     $(".p-news__items-wrapper").not(".show").hide();

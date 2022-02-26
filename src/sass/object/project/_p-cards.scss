@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.p-cards {
+  @include mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.p-cards__item {
+  @include mq("md") {
+    width: calc((100% - (rem(94) * 2)) / 3);
+    margin-right: rem(94);
+  }
+}
+
+.p-cards__item + .p-cards__item {
+  margin-top: rem(94);
+  @include mq("md") {
+    margin-top: initial;
+  }
+}
+.p-cards__item:nth-child(3n) {
+  @include mq("md") {
+    margin-right: 0;
+  }
+}

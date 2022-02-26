@@ -1,15 +1,11 @@
 @use "global" as *;
 
-.c-card {
-  padding-left: $padding-sp;
-  padding-right: $padding-sp;
-}
-.c-card__img-wrapper {
+.c-card__img {
   position: relative;
   padding-top: 63.141994%;
 }
 
-.c-card__img {
+.c-card__img img {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -23,6 +19,7 @@
 
 .c-card__title {
   font-size: rem(20);
+  font-weight: $medium;
 }
 
 .c-card__text {

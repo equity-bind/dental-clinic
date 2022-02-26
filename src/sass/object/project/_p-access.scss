@@ -1,19 +1,15 @@
 @use "global" as *;
 
 .p-access__container {
-  padding-top: rem(60);
   padding-bottom: rem(110);
   background: url(../images/common/bg.jpg) no-repeat center center / cover;
 }
 
-.p-access__inner {
-  max-width: rem(600);
-  @include mq("md") {
-    max-width: initial;
-  }
+.p-access__section-title {
+  padding-top: rem(60);
 }
 
-.p-access__content {
+.p-access__contents {
   @include mq("md") {
     display: flex;
     align-items: center;
@@ -21,11 +17,11 @@
   margin-top: rem(84);
 }
 
-.p-access__img-wrapper {
+.p-access__img {
   flex: 0 1 55.5932203%;
 }
 
-.p-access__body {
+.p-access__content {
   flex: 1;
   margin-left: 6.3846154%;
 }

@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.p-pc-nav {
+  display: none;
+  @include mq("md") {
+    display: block;
+    transition: color 0.5s;
+    color: $white;
+  }
+}
+.p-pc-nav__items {
+  display: flex;
+}
+
+.p-pc-nav__item {
+  padding: 0 rem(15);
+}
+
+.p-pc-nav__item--color_sub {
+  color: $black;
+}

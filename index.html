@@ -30,68 +30,40 @@
     <header class="l-header p-header js-header">
       <div class="p-header__inner">
         <div class="p-header__wrapper">
-          <h1 class="p-header__logo">
-            <a href="#" class="p-header__link"></a>
-            <!-- /.logo__link -->
+          <h1 class="p-header__logo p-header__logo--bg_top">
+            <a href="#"></a>
           </h1>
-          <!-- /.p-header__logo -->
-          <button class="c-hamburger js-hamburger">
+
+          <button class="p-header__hamburger c-hamburger js-hamburger">
             <span></span>
             <span></span>
             <span></span>
           </button>
-          <!-- /.c-hamburger -->
-          <nav class="sp-nav js-drawer-menu">
-            <ul class="sp-nav__items">
-              <li class="sp-nav__item sp-nav__item--yellow">
-                <a href="#" class="sp-nav__link c-button--reserve_sp js-modal-open">宿泊予約</a
-                ><!-- /.sp-nav__link -->
+          <nav class="p-header__sp-nav p-sp-nav js-drawer-menu">
+            <ul class="p-sp-nav__items">
+              <li class="p-sp-nav__item p-sp-nav__item--yellow">
+                <a href="#" class="c-button--reserve_sp js-modal-open">宿泊予約</a>
               </li>
-              <!-- /.sp-nav__item -->
-              <li class="sp-nav__item">
-                <a href="room.html" class="sp-nav__link">お部屋</a
-                ><!-- /.sp-nav__link -->
-              </li>
-              <!-- /.sp-nav__item -->
-              <li class="sp-nav__item">
-                <a href="#" class="sp-nav__link">お料理</a
-                ><!-- /.sp-nav__link -->
-              </li>
-              <!-- /.sp-nav__item -->
-              <li class="sp-nav__item">
-                <a href="#" class="sp-nav__link">温泉</a
-                ><!-- /.sp-nav__link -->
-              </li>
-              <!-- /.sp-nav__item -->
+              <li class="p-sp-nav__item"><a href="room.html">お部屋</a></li>
+              <li class="p-sp-nav__item"><a href="menu.html">お料理</a></li>
+              <li class="p-sp-nav__item"><a href="spa.html">温泉</a></li>
             </ul>
-            <!-- /.sp-nav__items -->
           </nav>
-          <!-- /.sp-nav -->
-          <nav class="pc-nav">
-            <ul class="pc-nav__items">
-              <li class="pc-nav__item">
-                <a href="room.html" class="pc-nav__link">お部屋</a
-                ><!-- /.pc-nav__link -->
+          <nav class="p-header__pc-nav p-pc-nav">
+            <ul class="p-pc-nav__items">
+              <li class="p-pc-nav__item">
+                <a href="room.html">お部屋</a>
               </li>
-              <!-- /.pc-nav__item -->
-              <li class="pc-nav__item">
-                <a href="#" class="pc-nav__link">お料理</a
-                ><!-- /.pc-nav__link -->
+              <li class="p-pc-nav__item">
+                <a href="menu.html">お料理</a>
               </li>
-              <!-- /.pc-nav__item -->
-              <li class="pc-nav__item">
-                <a href="#" class="pc-nav__link">温泉</a
-                ><!-- /.pc-nav__link -->
+              <li class="p-pc-nav__item">
+                <a href="spa.html">温泉</a>
               </li>
-              <!-- /.pc-nav__item -->
             </ul>
-            <!-- /.pc-nav__items -->
           </nav>
-          <!-- /.pc-nav -->
         </div>
-        <!-- /.p-header__wrapper -->
-        <a href="#" class="c-button--reserve js-modal-open">宿泊予約</a
-        ><!-- /.pc-nav__link--reserve -->
+        <a href="#" class="c-button--reserve js-modal-open">宿泊予約</a>
         <div class="p-modal js-modal">
           <div class="p-modal__bg js-modal__close"></div>
           <!-- /.p-modal__bg js-modal__close -->
@@ -99,7 +71,7 @@
             <a href="#" class="p-modal__close js-modal__close"></a>
             <!-- /.p-modal__close -->
             <div class="p-modal__inner">
-              <h3 class="p-modal__title">宿泊予約</h3>
+              <h2 class="p-modal__title">宿泊予約</h2>
               <!-- /.p-modal__title -->
               <form class="p-modal__form" action="#">
                 <div class="p-modal__item">
@@ -150,25 +122,19 @@
             <div class="p-mv__img">
               <img src="images/common/mainbg01.jpg" alt="トップ画面その1" />
             </div>
-            <div class="p-mv__block">
-              <h2 class="p-mv__title">頑 張 る 人 の<br />頑 張 ら な い 時 間</h2>
-            </div>
           </div>
           <div class="swiper-slide">
             <div class="p-mv__img">
               <img src="images/common/mainbg02.jpg" alt="トップ画面その1" />
-            </div>
-            <div class="p-mv__block">
-              <h2 class="p-mv__title">頑 張 る 人 の<br />頑 張 ら な い 時 間</h2>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="p-mv__img">
               <img src="images/common/mainbg03.jpg" alt="トップ画面その1" />
             </div>
-            <div class="p-mv__block">
-              <h2 class="p-mv__title">頑 張 る 人 の<br />頑 張 ら な い 時 間</h2>
-            </div>
+          </div>
+          <div class="p-mv__block">
+            <h2 class="p-mv__title">頑 張 る 人 の<br />頑 張 ら な い 時 間</h2>
           </div>
         </div>
       </div>
@@ -178,428 +144,297 @@
       <div class="p-concept__container">
         <div class="p-concept__inner">
           <div class="p-concept__body">
-            <h4 class="p-concept__title">温海温泉の</h4>
-            <h4 class="p-concept__title">美しさに癒されて</h4>
+            <h2 class="p-concept__title">温海温泉の</h2>
+            <h2 class="p-concept__title">美しさに癒されて</h2>
             <p class="p-concept__text">
               東北の奥座敷である温海温泉郷<br />開湯は約1300年前とされ、役小角が<br />
               発見したと伝えられます
             </p>
-            <!-- /.p-concept__text -->
             <p class="p-concept__text">
               石井花壇は江戸より続く由緒ある旅館で<br />
               クラシックな作りの中に大正ロマンあふれる<br />
               内装を残しております
             </p>
-            <!-- /.p-concept__text -->
             <p class="p-concept__text">
               圧倒的癒やしの空間で<br />
               頑張る現代人に<br />
               頑張らない圧倒的な非日常をご提供します
             </p>
-            <!-- /.p-concept__text -->
             <p class="p-concept__author">石井花壇</p>
-            <!-- /.p-concept__author -->
           </div>
-          <!-- /.p-concept__body -->
         </div>
-        <!-- /.p-concept__inner -->
       </div>
-      <!-- /.p-concept__container -->
     </section>
-    <!-- /.p-concept -->
-    <section class="p-service">
+    <div class="p-service">
       <div class="p-service__items">
         <div class="p-service__item">
-          <div class="p-service__img-wrapper">
-            <img src="images/common/oheya-top.jpg" alt="お部屋ページ" class="p-service__img" />
+          <div class="p-service__img">
+            <img src="images/common/oheya-top.jpg" alt="お部屋ページ" />
           </div>
-          <!-- /.p-service__img-wrapper -->
           <div class="p-service__body">
-            <h4 class="p-service__title">
+            <h3 class="p-service__title">
               喧騒から離れた空間<br class="pc-br" />
               心落ち着く至極のひととき
-            </h4>
-            <!-- /.p-service__title -->
+            </h3>
             <p class="p-service__text">
               まるで時が止まったかのような、圧倒的な静寂のなかで、<br class="pc-br" />
               ひたすらにゆったりと…。<br />
               最高級の「何もしない時間」をお過ごしください。
             </p>
-            <!-- /.p-service__text -->
             <div class="p-service__button">
-              <a href="#" class="c-button">お部屋について</a
-              ><!-- /.c-button -->
+              <a href="room.html" class="c-button">お部屋について</a>
             </div>
-            <!-- /.p-service__button p-service__button -->
           </div>
-          <!-- /.p-service__body -->
         </div>
-        <!-- /.p-service__item .p-service -->
-        <div class="p-service__item p-service--row_reverse">
-          <div class="p-service__img-wrapper">
-            <img src="images/common/menu-top.jpg" alt="お料理ページ" class="p-service__img" />
+        <div class="p-service__item p-service__item--row_reverse">
+          <div class="p-service__img">
+            <img src="images/common/menu-top.jpg" alt="お料理ページ" />
           </div>
-          <!-- /.p-service__img-wrapper -->
           <div class="p-service__body p-service__body--row_reverse">
-            <h4 class="p-service__title">
+            <h3 class="p-service__title">
               出迎えるのは<br class="pc-br" />
               極上の温海料理
-            </h4>
-            <!-- /.p-service__title -->
+            </h3>
             <p class="p-service__text">
               最も旬の食材を愉しむ、最高の贅沢を<br class="pc-br" />
               最高級A5ランクの米沢牛と共に頂く。<br class="pc-br" />
               あなたの人生史に残る「極上の感動」を<br class="pc-br" />
               お約束します。
             </p>
-            <!-- /.p-service__text -->
             <div class="p-service__button">
-              <a href="#" class="c-button">料理について</a
-              ><!-- /.c-button -->
+              <a href="menu.html" class="c-button">料理について</a>
             </div>
-            <!-- /.p-service__button p-service__button -->
           </div>
-          <!-- /.p-service__body -->
         </div>
-        <!-- /.p-service__item .p-service -->
         <div class="p-service__item">
-          <div class="p-service__img-wrapper">
-            <img src="images/common/onsen-top.jpg" alt="温泉ページ" class="p-service__img" />
+          <div class="p-service__img">
+            <img src="images/common/onsen-top.jpg" alt="温泉ページ" />
           </div>
-          <!-- /.p-service__img-wrapper -->
           <div class="p-service__body">
-            <h4 class="p-service__title">
+            <h3 class="p-service__title">
               疲れ切った身体にやすらぎを<br class="pc-br" />
               温海の源泉に癒やされて
-            </h4>
-            <!-- /.p-service__title -->
+            </h3>
             <p class="p-service__text">
               古くは弘法大師の病をも治療したと言われる熱海の泉質。<br class="pc-br" />
               現代人の疲弊しきった身体を修復する最高級の湯治場として<br class="pc-br" />
               ご活用ください。
             </p>
-            <!-- /.p-service__text -->
             <div class="p-service__button">
-              <a href="#" class="c-button">お部屋について</a
-              ><!-- /.c-button -->
+              <a href="spa.html" class="c-button">温泉について</a>
             </div>
-            <!-- /.p-service__button p-service__button -->
           </div>
-          <!-- /.p-service__body -->
         </div>
-        <!-- /.p-service__item .c-media -->
       </div>
-      <!-- /.p-service__items -->
-    </section>
-    <!-- /.p-service -->
-    <section class="p-plan">
+    </div>
+    <section class="p-plan l-plan-top">
       <div class="p-plan__container">
-        <div class="p-plan__inner l-inner">
-          <div class="c-section-title">
-            <div class="c-section-title__img-wrapper">
-              <img src="images/common/logo.svg " alt="セクションタイトルロゴ" class="c-section-title__img" />
+        <div class="l-inner">
+          <div class="p-plan__section-title c-section-title">
+            <div class="c-section-title__img">
+              <img src="images/common/logo.svg " alt="セクションタイトルロゴ" />
             </div>
-            <!-- /.c-section-title__img-wrapper -->
-            <h4 class="c-section-title__heading">おすすめご宿泊プラン</h4>
-            <!-- /.c-section-title__heading -->
+            <h2 class="c-section-title__heading">おすすめご宿泊プラン</h2>
           </div>
-          <!-- /.c-section-title -->
-          <div class="p-plan__items">
-            <div class="c-card p-plan__item">
-              <div class="c-card__img-wrapper">
-                <img src="images/common/recommended01.jpg" alt="プラン1" class="c-card__img" />
+          <div class="p-plan__cards p-cards">
+            <div class="c-card p-cards__item">
+              <div class="c-card__img">
+                <img src="images/common/recommended01.jpg" alt="プラン1" />
               </div>
-              <!-- /.c-card__img-wrapper -->
               <div class="c-card__body">
-                <p class="c-card__title">朝食付きプラン、日本近海で取れたのどぐろを朝食として…</p>
-                <!-- /.c-card__title -->
+                <h3 class="c-card__title">朝食付きプラン、日本近海で取れたのどぐろを朝食として…</h3>
                 <p class="c-card__text">最高級と称されるのどぐろ、正式には「アカムツ」と呼ばれる魚、味は独特の上品な味わいで、焼いても煮ても美味</p>
-                <!-- /.c-card__text -->
               </div>
-              <!-- /.c-card__body -->
             </div>
-            <!-- /.c-card .p-plan__item -->
-            <div class="c-card p-plan__item">
-              <div class="c-card__img-wrapper">
-                <img src="images/common/recommended02.jpg" alt="プラン2" class="c-card__img" />
+            <div class="c-card p-cards__item">
+              <div class="c-card__img">
+                <img src="images/common/recommended02.jpg" alt="プラン2" />
               </div>
-              <!-- /.c-card__img-wrapper -->
               <div class="c-card__body">
-                <p class="c-card__title">【期間限定】熱海蟹をたっぷりと 愉しむプラン。</p>
-                <!-- /.c-card__title -->
+                <h3 class="c-card__title">【期間限定】熱海蟹をたっぷりと 愉しむプラン。</h3>
                 <p class="c-card__text">温海で水揚げされた蟹は「温海蟹」 として知られ、嗜好品として愛されて きました。この宿泊プランでは存分に</p>
-                <!-- /.c-card__text -->
               </div>
-              <!-- /.c-card__body -->
             </div>
-            <!-- /.c-card .p-plan__item -->
-            <div class="c-card p-plan__item">
-              <div class="c-card__img-wrapper">
-                <img src="images/common/recommended03.jpg" alt="プラン3" class="c-card__img" />
+            <div class="c-card p-cards__item">
+              <div class="c-card__img">
+                <img src="images/common/recommended03.jpg" alt="プラン3" />
               </div>
-              <!-- /.c-card__img-wrapper -->
               <div class="c-card__body">
-                <p class="c-card__title">【平日限定】贅沢美味懐石プラン。 海辺の四季旬彩プラン。</p>
-                <!-- /.c-card__title -->
+                <h3 class="c-card__title">【平日限定】贅沢美味懐石プラン。 海辺の四季旬彩プラン。</h3>
                 <p class="c-card__text">熱海近海で取れた魚を鮮度そのままに舟盛りに してご提供。生きた味をお楽しみください。</p>
-                <!-- /.c-card__text -->
               </div>
-              <!-- /.c-card__body -->
             </div>
-            <!-- /.c-card .p-plan__item -->
           </div>
-          <!-- /.p-plan__items -->
         </div>
-        <!-- /.p-plan__inner .l-inner -->
       </div>
-      <!-- /.p-plan__container -->
     </section>
-    <!-- /.p-plan -->
     <section class="p-news">
-      <div class="p-news__container">
-        <div class="p-news__inner l-inner">
-          <div class="c-section-title">
-            <div class="c-section-title__img-wrapper">
-              <img src="images/common/logo.svg " alt="セクションタイトルロゴ" class="c-section-title__img" />
-            </div>
-            <!-- /.c-section-title__img-wrapper -->
-            <h4 class="c-section-title__heading">お知らせ</h4>
-            <!-- /.c-section-title__heading -->
+      <div class="l-inner">
+        <div class="p-news__section-title c-section-title">
+          <div class="c-section-title__img-wrapper">
+            <img src="images/common/logo.svg " alt="セクションタイトルロゴ" class="c-section-title__img" />
           </div>
-          <!-- /.c-section-title -->
-          <ul class="c-tab">
-            <li class="c-tab__item is-active">
-              <a href="#" class="c-tab__link"> 営業情報 </a
-              ><!-- /.c-tab__link -->
-            </li>
-            <!-- /.c-tab__item -->
-            <li class="c-tab__item">
-              <a href="#" class="c-tab__link">その他</a
-              ><!-- /.c-tab__link -->
-            </li>
-            <!-- /.c-tab__item -->
-          </ul>
-          <!-- /.c-tab -->
-          <div class="p-news__items-wrapper show">
-            <div class="p-news__items">
-              <div class="p-news__item">
-                <div class="p-news__img-wrapper">
-                  <img src="images/common/news01.jpg" alt="お知らせその1" class="p-news__img" />
-                </div>
-                <!-- /.p-news__img-wrapper -->
-                <div class="p-news__body">
-                  <time class="p-news__date" datetime="2020-12-24">2020.12.24</time
-                  ><!-- /.p-news__date -->
-                  <p class="p-news__text">年末最後の営業日は27日になります。</p>
-                  <!-- /.p-news__text -->
-                </div>
-                <!-- /.p-news__body -->
-              </div>
-              <!-- /.p-news__item -->
-              <div class="p-news__item">
-                <div class="p-news__img-wrapper">
-                  <img src="images/common/news01.jpg" alt="お知らせその1" class="p-news__img" />
-                </div>
-                <!-- /.p-news__img-wrapper -->
-                <div class="p-news__body">
-                  <time class="p-news__date" datetime="2020-12-24">2020.12.24</time
-                  ><!-- /.p-news__date -->
-                  <p class="p-news__text">年末最後の営業日は27日になります。</p>
-                  <!-- /.p-news__text -->
-                </div>
-                <!-- /.p-news__body -->
-              </div>
-              <!-- /.p-news__item -->
-              <div class="p-news__item">
-                <div class="p-news__img-wrapper">
-                  <img src="images/common/news01.jpg" alt="お知らせその1" class="p-news__img" />
-                </div>
-                <!-- /.p-news__img-wrapper -->
-                <div class="p-news__body">
-                  <time class="p-news__date" datetime="2020-12-24">2020.12.24</time
-                  ><!-- /.p-news__date -->
-                  <p class="p-news__text">年末最後の営業日は27日になります。</p>
-                  <!-- /.p-news__text -->
-                </div>
-                <!-- /.p-news__body -->
-              </div>
-              <!-- /.p-news__item -->
-              <div class="p-news__item">
-                <div class="p-news__img-wrapper">
-                  <img src="images/common/news01.jpg" alt="お知らせその1" class="p-news__img" />
-                </div>
-                <!-- /.p-news__img-wrapper -->
-                <div class="p-news__body">
-                  <time class="p-news__date" datetime="2020-12-24">2020.12.24</time
-                  ><!-- /.p-news__date -->
-                  <p class="p-news__text">年末最後の営業日は27日になります。</p>
-                  <!-- /.p-news__text -->
-                </div>
-                <!-- /.p-news__body -->
-              </div>
-              <!-- /.p-news__item -->
-              <div class="p-news__item">
-                <div class="p-news__img-wrapper">
-                  <img src="images/common/news01.jpg" alt="お知らせその1" class="p-news__img" />
-                </div>
-                <!-- /.p-news__img-wrapper -->
-                <div class="p-news__body">
-                  <time class="p-news__date" datetime="2020-12-24">2020.12.24</time
-                  ><!-- /.p-news__date -->
-                  <p class="p-news__text">年末最後の営業日は27日になります。</p>
-                  <!-- /.p-news__text -->
-                </div>
-                <!-- /.p-news__body -->
-              </div>
-              <!-- /.p-news__item -->
-              <div class="p-news__item">
-                <div class="p-news__img-wrapper">
-                  <img src="images/common/news01.jpg" alt="お知らせその1" class="p-news__img" />
-                </div>
-                <!-- /.p-news__img-wrapper -->
-                <div class="p-news__body">
-                  <time class="p-news__date" datetime="2020-12-24">2020.12.24</time
-                  ><!-- /.p-news__date -->
-                  <p class="p-news__text">年末最後の営業日は27日になります。</p>
-                  <!-- /.p-news__text -->
-                </div>
-                <!-- /.p-news__body -->
-              </div>
-              <!-- /.p-news__item -->
-            </div>
-            <!-- /.p-news__items -->
-          </div>
-          <!-- /.p-news__items-wrapper -->
-          <div class="p-news__items-wrapper">
-            <div class="p-news__items">
-              <div class="p-news__item">
-                <div class="p-news__img-wrapper">
-                  <img src="images/common/news02.jpg" alt="お知らせその1" class="p-news__img" />
-                </div>
-                <!-- /.p-news__img-wrapper -->
-                <div class="p-news__body">
-                  <time class="p-news__date" datetime="2020-12-11">2020.12.11</time
-                  ><!-- /.p-news__date -->
-                  <p class="p-news__text">12.21は臨時休業とさせていただきます</p>
-                  <!-- /.p-news__text -->
-                </div>
-                <!-- /.p-news__body -->
-              </div>
-              <!-- /.p-news__item -->
-              <div class="p-news__item">
-                <div class="p-news__img-wrapper">
-                  <img src="images/common/news02.jpg" alt="お知らせその1" class="p-news__img" />
-                </div>
-                <!-- /.p-news__img-wrapper -->
-                <div class="p-news__body">
-                  <time class="p-news__date" datetime="2020-12-11">2020.12.11</time
-                  ><!-- /.p-news__date -->
-                  <p class="p-news__text">12.21は臨時休業とさせていただきますので、よろしく お願いします。</p>
-                  <!-- /.p-news__text -->
-                </div>
-                <!-- /.p-news__body -->
-              </div>
-              <!-- /.p-news__item -->
-              <div class="p-news__item">
-                <div class="p-news__img-wrapper">
-                  <img src="images/common/news02.jpg" alt="お知らせその1" class="p-news__img" />
-                </div>
-                <!-- /.p-news__img-wrapper -->
-                <div class="p-news__body">
-                  <time class="p-news__date" datetime="2020-12-11">2020.12.11</time
-                  ><!-- /.p-news__date -->
-                  <p class="p-news__text">12.21は臨時休業とさせていただきますので、よろしく お願いします。</p>
-                  <!-- /.p-news__text -->
-                </div>
-                <!-- /.p-news__body -->
-              </div>
-              <!-- /.p-news__item -->
-              <div class="p-news__item">
-                <div class="p-news__img-wrapper">
-                  <img src="images/common/news02.jpg" alt="お知らせその1" class="p-news__img" />
-                </div>
-                <!-- /.p-news__img-wrapper -->
-                <div class="p-news__body">
-                  <time class="p-news__date" datetime="2020-12-11">2020.12.11</time
-                  ><!-- /.p-news__date -->
-                  <p class="p-news__text">12.21は臨時休業とさせていただきますので、よろしく お願いします。</p>
-                  <!-- /.p-news__text -->
-                </div>
-                <!-- /.p-news__body -->
-              </div>
-              <!-- /.p-news__item -->
-              <div class="p-news__item">
-                <div class="p-news__img-wrapper">
-                  <img src="images/common/news02.jpg" alt="お知らせその1" class="p-news__img" />
-                </div>
-                <!-- /.p-news__img-wrapper -->
-                <div class="p-news__body">
-                  <time class="p-news__date" datetime="2020-12-11">2020.12.11</time
-                  ><!-- /.p-news__date -->
-                  <p class="p-news__text">12.21は臨時休業とさせていただきますので、よろしく お願いします。</p>
-                  <!-- /.p-news__text -->
-                </div>
-                <!-- /.p-news__body -->
-              </div>
-              <!-- /.p-news__item -->
-              <div class="p-news__item">
-                <div class="p-news__img-wrapper">
-                  <img src="images/common/news02.jpg" alt="お知らせその1" class="p-news__img" />
-                </div>
-                <!-- /.p-news__img-wrapper -->
-                <div class="p-news__body">
-                  <time class="p-news__date" datetime="2020-12-11">2020.12.11</time
-                  ><!-- /.p-news__date -->
-                  <p class="p-news__text">12.21は臨時休業とさせていただきますので、よろしく お願いします。</p>
-                  <!-- /.p-news__text -->
-                </div>
-                <!-- /.p-news__body -->
-              </div>
-              <!-- /.p-news__item -->
-            </div>
-            <!-- /.p-news__items -->
-          </div>
-          <!-- /.p-news__items-wrapper -->
+          <h4 class="c-section-title__heading">お知らせ</h4>
         </div>
-        <!-- /.p-news__inner inner -->
+        <ul class="p-news__tab c-tab">
+          <li class="c-tab__item">
+            <a href="#" class="is-active"> 営業情報</a>
+          </li>
+          <li class="c-tab__item">
+            <a href="#">その他</a>
+          </li>
+        </ul>
+        <div class="p-news__items-wrapper show">
+          <div class="p-news__items">
+            <div class="p-news__item">
+              <div class="p-news__img">
+                <img src="images/common/news01.jpg" alt="お知らせその1" />
+              </div>
+
+              <div class="p-news__body">
+                <time class="p-news__date" datetime="2020-12-24">2020.12.24</time>
+                <p class="p-news__text">年末最後の営業日は27日になります。</p>
+              </div>
+            </div>
+            <div class="p-news__item">
+              <div class="p-news__img">
+                <img src="images/common/news01.jpg" alt="お知らせその1" />
+              </div>
+
+              <div class="p-news__body">
+                <time class="p-news__date" datetime="2020-12-24">2020.12.24</time>
+                <p class="p-news__text">年末最後の営業日は27日になります。</p>
+              </div>
+            </div>
+            <div class="p-news__item">
+              <div class="p-news__img">
+                <img src="images/common/news01.jpg" alt="お知らせその1" />
+              </div>
+
+              <div class="p-news__body">
+                <time class="p-news__date" datetime="2020-12-24">2020.12.24</time>
+                <p class="p-news__text">年末最後の営業日は27日になります。</p>
+              </div>
+            </div>
+            <div class="p-news__item">
+              <div class="p-news__img">
+                <img src="images/common/news01.jpg" alt="お知らせその1" />
+              </div>
+
+              <div class="p-news__body">
+                <time class="p-news__date" datetime="2020-12-24">2020.12.24</time>
+                <p class="p-news__text">年末最後の営業日は27日になります。</p>
+              </div>
+            </div>
+            <div class="p-news__item">
+              <div class="p-news__img">
+                <img src="images/common/news01.jpg" alt="お知らせその1" />
+              </div>
+
+              <div class="p-news__body">
+                <time class="p-news__date" datetime="2020-12-24">2020.12.24</time>
+                <p class="p-news__text">年末最後の営業日は27日になります。</p>
+              </div>
+            </div>
+            <div class="p-news__item">
+              <div class="p-news__img">
+                <img src="images/common/news01.jpg" alt="お知らせその1" />
+              </div>
+
+              <div class="p-news__body">
+                <time class="p-news__date" datetime="2020-12-24">2020.12.24</time>
+                <p class="p-news__text">年末最後の営業日は27日になります。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-news__items-wrapper">
+          <div class="p-news__items">
+            <div class="p-news__item">
+              <div class="p-news__img">
+                <img src="images/common/news02.jpg" alt="お知らせその1" />
+              </div>
+
+              <div class="p-news__body">
+                <time class="p-news__date" datetime="2020-12-11">2020.12.11</time>
+                <p class="p-news__text">12.21は臨時休業とさせていただきます</p>
+              </div>
+            </div>
+            <div class="p-news__item">
+              <div class="p-news__img">
+                <img src="images/common/news02.jpg" alt="お知らせその1" />
+              </div>
+
+              <div class="p-news__body">
+                <time class="p-news__date" datetime="2020-12-11">2020.12.11</time>
+                <p class="p-news__text">12.21は臨時休業とさせていただきますので、よろしく お願いします。</p>
+              </div>
+            </div>
+            <div class="p-news__item">
+              <div class="p-news__img">
+                <img src="images/common/news02.jpg" alt="お知らせその1" />
+              </div>
+
+              <div class="p-news__body">
+                <time class="p-news__date" datetime="2020-12-11">2020.12.11</time>
+                <p class="p-news__text">12.21は臨時休業とさせていただきますので、よろしく お願いします。</p>
+              </div>
+            </div>
+            <div class="p-news__item">
+              <div class="p-news__img">
+                <img src="images/common/news02.jpg" alt="お知らせその1" />
+              </div>
+
+              <div class="p-news__body">
+                <time class="p-news__date" datetime="2020-12-11">2020.12.11</time>
+                <p class="p-news__text">12.21は臨時休業とさせていただきますので、よろしく お願いします。</p>
+              </div>
+            </div>
+            <div class="p-news__item">
+              <div class="p-news__img">
+                <img src="images/common/news02.jpg" alt="お知らせその1" />
+              </div>
+
+              <div class="p-news__body">
+                <time class="p-news__date" datetime="2020-12-11">2020.12.11</time>
+                <p class="p-news__text">12.21は臨時休業とさせていただきますので、よろしく お願いします。</p>
+              </div>
+            </div>
+            <div class="p-news__item">
+              <div class="p-news__img">
+                <img src="images/common/news02.jpg" alt="お知らせその1" />
+              </div>
+
+              <div class="p-news__body">
+                <time class="p-news__date" datetime="2020-12-11">2020.12.11</time>
+                <p class="p-news__text">12.21は臨時休業とさせていただきますので、よろしく お願いします。</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- /.p-news__container -->
     </section>
-    <!-- /.p-news -->
-    <section class="p-access">
+    <section class="p-access l-access-top">
       <div class="p-access__container">
-        <div class="p-access__inner l-inner">
-          <div class="c-section-title">
-            <div class="c-section-title__img-wrapper">
-              <img src="images/common/logo.svg " alt="セクションタイトルロゴ" class="c-section-title__img" />
+        <div class="l-inner">
+          <div class="p-access__section-title c-section-title">
+            <div class="c-section-title__img">
+              <img src="images/common/logo.svg " alt="セクションタイトルロゴ" />
             </div>
-            <!-- /.c-section-title__img-wrapper -->
-            <h4 class="c-section-title__heading">アクセス</h4>
-            <!-- /.c-section-title__heading -->
+            <h2 class="c-section-title__heading">アクセス</h2>
           </div>
-          <!-- /.c-section-title -->
-          <div class="p-access__content">
-            <div class="p-access__img-wrapper"><img src="images/common/acess.jpg" alt="旅館外観 " class="p-access__img" /></div>
-            <!-- /.p-access__img-wrapper -->
-            <div class="p-access__body">
-              <p class="p-access__address-title">住所</p>
-              <!-- /.p-access__address-title -->
+          <div class="p-access__contents">
+            <div class="p-access__img"><img src="images/common/acess.jpg" alt="旅館外観 " /></div>
+            <div class="p-access__content">
+              <h3 class="p-access__address-title">住所</h3>
               <p class="p-access__address-text">〒000-0000<br />山形県鶴岡市xxxxxxxxxx</p>
-              <!-- /.p-access__address-postcode -->
-              <p class="p-access__address-title">TEL/FAX</p>
-              <!-- /.p-access__address-title -->
+              <h3 class="p-access__address-title">TEL/FAX</h3>
               <p class="p-access__address-text">000-0000-0000/00-0000-0000</p>
-              <!-- /.p-access__address-text -->
-              <p class="p-access__address-title">営業時間</p>
-              <!-- /.p-access__address-title -->
-              <time class="p-access__address-text">14:00-23:00</time
-              ><!-- /.p-access__address-text -->
+              <h3 class="p-access__address-title">営業時間</h3>
+              <time class="p-access__address-text">14:00-23:00</time>
               <p class="p-access__address-text">＊4名以上のご予約の場合は、最寄り駅の「鶴岡駅」より送迎が可能ですので、 ご連絡ください。</p>
-              <!-- /.p-access__address-text -->
             </div>
-            <!-- /.p-access__body -->
           </div>
-          <!-- /.p-access__content -->
           <div class="p-access__map-wrap">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24316.854160705716!2d139.60271955107078!3d38.63255237436238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1645483255495!5m2!1sja!2sjp"
@@ -610,65 +445,48 @@
               loading="lazy"
             ></iframe>
           </div>
-          <!-- /.p-access__map-wrap -->
         </div>
-        <!-- /.p-access__inner -->
       </div>
-      <!-- /.p-access__container -->
     </section>
-    <!-- /.p-access -->
     <footer class="p-footer">
       <div class="p-footer__bg-container">
         <nav class="p-footer-nav">
           <ul class="p-footer-nav__items">
             <li class="p-footer-nav__item">
-              <a href="#" class="p-footer-nav__link">温泉</a
-              ><!-- /.__link p-footer-nav__link -->
+              <a href="spa.html">温泉</a>
             </li>
-            <!-- /.__item p-footer-nav__item -->
+
             <li class="p-footer-nav__item">
-              <a href="#" class="p-footer-nav__link">お料理</a
-              ><!-- /.p-footer-nav__link -->
+              <a href="menu.html">お料理</a>
             </li>
-            <!-- /.__item p-footer-nav__item -->
+
             <li class="p-footer-nav__item">
-              <a href="#" class="p-footer-nav__link">お部屋</a
-              ><!-- /.p-footer-nav__link -->
+              <a href="room.html">お部屋</a>
             </li>
-            <!-- /.p-footer-nav__item -->
           </ul>
-          <!-- /. p-footer-nav__items -->
         </nav>
-        <!-- /.pc-nav -->
+
         <div class="p-footer__logo">
-          <a href="#" class="p-footer__link">
+          <a href="#">
             <img src="images/common/footer-logo.svg" alt="フッターロゴ" />
           </a>
-          <!-- /.logo__link -->
         </div>
-        <!-- /.p-footer__logo -->
         <div class="p-footer__address-wrapper">
           <p class="p-footer__postcode">〒000-0000</p>
-          <!-- /.p-footer__postcode -->
+
           <p class="p-footer__address">山形県鶴岡市xxxxxxxxxxx</p>
-          <!-- /.p-footer__address -->
         </div>
-        <!-- /.p-footer__address-wrapper -->
+
         <div class="p-footer__tel-wrapper">
           <p class="p-footer__tel">TEL.000-0000-0000</p>
-          <!-- /.p-footer__tel -->
+
           <p class="p-footer__fax">FAX.00-0000-0000</p>
-          <!-- /.p-footer__fax -->
         </div>
-        <!-- /.p-footer__tel-wrapper -->
       </div>
-      <!-- /.p-footer__bg-container -->
+
       <div class="p-footer__copyright-container">
-        <small class="p-footer__copyright">Copyright &copy; 石井花壇 All Rights Reserved.</small
-        ><!-- /.p-footer__copyright -->
+        <small class="p-footer__copyright">Copyright &copy; 石井花壇 All Rights Reserved.</small>
       </div>
-      <!-- /.p-footer__copyright-container -->
     </footer>
-    <!-- /.p-footer -->
   </body>
 </html>

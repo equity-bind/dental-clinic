@@ -1,6 +1,10 @@
 @use "global" as *;
 
-.p-room__title {
+.p-sub-page__breadcrumb {
+  margin-top: rem(36);
+}
+
+.p-sub-page__title {
   text-align: center;
   margin-top: rem(98);
   line-height: 2;
@@ -8,3 +12,6 @@
   font-weight: $medium;
 }
 
+.p-sub-page__media {
+  margin-top: rem(78);
+}

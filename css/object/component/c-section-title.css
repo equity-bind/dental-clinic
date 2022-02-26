@@ -19,13 +19,13 @@ body {
   }
 }
 
-.c-section-title__img-wrapper {
+.c-section-title__img {
   margin: 0 auto;
   width: 40px;
   width: 2.5rem;
 }
 
-.c-section-title__img {
+.c-section-title__img img {
   width: 100%;
 }
 

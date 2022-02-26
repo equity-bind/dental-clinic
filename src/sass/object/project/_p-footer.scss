@@ -6,23 +6,6 @@
   padding-bottom: rem(61);
 }
 
-.p-footer-nav__items {
-  color: $black;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-
-.p-footer-nav__item {
-  padding: 0 rem(17);
-}
-.p-footer-nav__link {
-  writing-mode: vertical-rl;
-  font-size: rem(18);
-  color: $black;
-  letter-spacing: 0.5em;
-}
-
 .p-footer__logo {
   margin: rem(96) auto 0;
   width: rem(145);
