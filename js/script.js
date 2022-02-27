@@ -104,13 +104,21 @@ jQuery(function ($) {
     $(".c-tab__item a").removeClass("is-active");
 
     $(this).children("a").addClass("is-active");
-    $(".p-news__items-wrapper").removeClass("show");
+    $(".p-news__items-wrapper").removeClass("is-show");
 
     let index = $(".c-tab__item").index(this);
 
-    $(".p-news__items-wrapper").eq(index).fadeIn(300).addClass("show");
-    $(".p-news__items-wrapper").not(".show").hide();
+    $(".p-news__items-wrapper").eq(index).fadeIn(300).addClass("is-show");
+    $(".p-news__items-wrapper").not(".is-show").hide();
     return false;
+  });
+
+  // ふわっと表示(AOS.jsライブラリ使用)
+  AOS.init({
+    offset: 200,
+    delay: 200,
+    duration: 300,
+    easing: "ease-out",
   });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
