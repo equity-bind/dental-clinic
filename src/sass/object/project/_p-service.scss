@@ -2,7 +2,6 @@
 
 .p-service__items {
   padding-top: rem(105);
-
 }
 .p-service__item + .p-service__item {
   margin-top: rem(122);
@@ -38,19 +37,21 @@
   }
 }
 .p-service__title {
-  margin-top: rem(32);
+  padding-top: rem(21);
   font-size: rem(36);
   font-weight: $medium;
   line-height: 1.7;
 }
-
+.p-service__item:nth-of-type(2) .p-service__title {
+  padding-top: rem(42);
+}
 .p-service__text {
-  margin-top: rem(75);
+  margin-top: rem(55);
   line-height: 2;
 }
 
 .p-service__button {
-  margin-top: rem(75);
+  margin-top: rem(64);
 }
 
 .p-service__item--row_reverse {
@@ -58,7 +59,8 @@
 }
 
 .p-service__body--row_reverse {
-  margin-right: 7.1354167vw;
+  margin-right: 9.1354167vw;
+  margin-left: initial;
 }
 
 .p-service__button {
@@ -67,6 +69,10 @@
     text-align: left;
   }
 }
+.p-service__item:nth-of-type(2) .p-service__button {
+  margin-top: rem(34);
+}
+
 .pc-br {
   display: none;
   @include mq("md") {

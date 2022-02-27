@@ -6,7 +6,8 @@
 }
 
 .c-tab__item {
-  padding-right: rem(53);
+  padding: 0 rem(26.5);
+  // padding-right: rem(53);
 }
 
 .c-tab__item a.is-active {
@@ -15,5 +16,5 @@
 }
 
 .c-tab__item + .c-tab__item {
-  padding-right: initial;
+  // padding-right: initial;
 }

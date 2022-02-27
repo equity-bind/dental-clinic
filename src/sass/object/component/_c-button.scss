@@ -22,13 +22,12 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: rem(26);
+  left: rem(37);
   width: rem(22);
   height: rem(22);
   background: url(../images/common/calender.svg) no-repeat center center / contain;
   transform: translateY(-50%);
 }
-
 .c-button--reserve_sp {
   display: inline-block;
   color: $white;

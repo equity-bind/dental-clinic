@@ -243,7 +243,7 @@ select::-ms-expand {
   text-align: center;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 2;
+  line-height: 1;
   min-width: 200px;
   min-width: 12.5rem;
   padding: 1.25em 2.75em;
@@ -273,8 +273,8 @@ select::-ms-expand {
   content: "";
   position: absolute;
   top: 50%;
-  left: 26px;
-  left: 1.625rem;
+  left: 37px;
+  left: 2.3125rem;
   width: 22px;
   width: 1.375rem;
   height: 22px;
@@ -313,38 +313,6 @@ select::-ms-expand {
   background: url(../images/common/calender.svg) no-repeat center center/contain;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-.c-card__img {
-  position: relative;
-  padding-top: 63.141994%;
-}
-
-.c-card__img img {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.c-card__body {
-  padding-top: 32px;
-  padding-top: 2rem;
-}
-
-.c-card__title {
-  font-size: 20px;
-  font-size: 1.25rem;
-  font-weight: 400;
-}
-
-.c-card__text {
-  padding-top: 36px;
-  padding-top: 2.25rem;
 }
 
 .c-hamburger {
@@ -422,19 +390,14 @@ select::-ms-expand {
 }
 
 .c-tab__item {
-  padding-right: 53px;
-  padding-right: 3.3125rem;
+  padding: 0 26.5px;
+  padding: 0 1.65625rem;
 }
 
 .c-tab__item a.is-active {
   border-bottom: 1px solid #707070;
   padding-bottom: 0.5px;
   padding-bottom: 0.03125rem;
-}
-
-.c-tab__item + .c-tab__item {
-  padding-right: 0;
-  padding-right: initial;
 }
 
 .c-table {
@@ -562,60 +525,29 @@ select::-ms-expand {
   height: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .p-cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .p-cards__item {
-    width: calc(33.33333% - 3.91667rem);
-    margin-right: 5.875rem;
-  }
-}
-
-.p-cards__item + .p-cards__item {
-  margin-top: 94px;
-  margin-top: 5.875rem;
-}
-@media screen and (min-width: 768px) {
-  .p-cards__item + .p-cards__item {
-    margin-top: 0;
-    margin-top: initial;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .p-cards__item:nth-child(3n) {
-    margin-right: 0;
-  }
-}
-
 .p-concept__container {
   background: url(../images/common/bg.jpg) no-repeat center center/cover;
 }
 
 .p-concept__inner {
-  max-width: 600px;
-  max-width: 37.5rem;
-  width: 100%;
-  margin: 0 auto;
   padding-top: 149px;
   padding-top: 9.3125rem;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 168px;
-  padding-bottom: 10.5rem;
+  padding-bottom: 77px;
+  padding-bottom: 4.8125rem;
+}
+
+.p-concept__body {
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
-  .p-concept__inner {
-    max-width: none;
-    max-width: initial;
+  .p-concept__body {
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    max-width: 65.625rem;
+    width: 100%;
+    height: 28.5rem;
+    padding-right: 2.375rem;
   }
 }
 
@@ -632,65 +564,50 @@ select::-ms-expand {
     -webkit-writing-mode: vertical-rl;
         -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
-    line-height: 2;
+    line-height: 2.2;
     letter-spacing: 0.5em;
+    margin-top: -5.25rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .p-concept__title:first-of-type {
-    margin-top: -3.125rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .p-concept__title:last-of-type {
-    margin-left: 7.375rem;
-  }
-}
-
-.p-concept__body {
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .p-concept__body {
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
-    max-width: 65.625rem;
-    width: 100%;
-    height: 28.5rem;
+  .p-concept__title + .p-concept__title {
+    margin-top: 0;
+    margin-top: initial;
   }
 }
 
 .p-concept__text {
-  margin-top: 59px;
-  margin-top: 3.6875rem;
-  line-height: 3;
-  letter-spacing: 0.5em;
+  padding-top: 59px;
+  padding-top: 3.6875rem;
+  padding-right: 87px;
+  padding-right: 5.4375rem;
+  line-height: 2.4;
+  letter-spacing: 0.38em;
+  text-orientation: upright;
 }
 @media screen and (min-width: 768px) {
   .p-concept__text {
-    margin-top: 0;
-    margin-top: initial;
-    margin-left: 7.375rem;
+    padding-top: 0;
+    padding-top: initial;
   }
 }
 
 .p-concept__text + .p-concept__text {
-  margin-top: 30px;
-  margin-top: 1.875rem;
+  padding-top: 30px;
+  padding-top: 1.875rem;
 }
 @media screen and (min-width: 768px) {
   .p-concept__text + .p-concept__text {
-    margin-top: 0;
-    margin-top: initial;
+    padding-top: 0;
+    padding-top: initial;
+    padding-right: 5.9375rem;
   }
 }
 
 .p-concept__author {
-  margin-top: 30px;
-  margin-top: 1.875rem;
+  padding-top: 30px;
+  padding-top: 1.875rem;
   font-size: 22px;
   font-size: 1.375rem;
   letter-spacing: 0.5em;
@@ -698,8 +615,10 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-concept__author {
-    margin-top: 0;
-    margin-top: initial;
+    padding-top: 0;
+    padding-top: initial;
+    padding-right: 6.375rem;
+    padding-bottom: 1.875rem;
   }
 }
 
@@ -1127,7 +1046,7 @@ input[tupe=text] {
   text-align: center;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 2;
+  line-height: 1;
   min-width: 200px;
   min-width: 12.5rem;
   padding: 1.25em 2.75em;
@@ -1163,16 +1082,16 @@ input[tupe=text] {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   position: absolute;
-  top: 33%;
-  right: 26%;
+  top: 33.4%;
+  right: 25.4%;
   z-index: 2;
 }
 
 .p-mv__title {
   font-size: 20px;
   font-size: 1.25rem;
-  letter-spacing: 0.1em;
-  line-height: 2.1;
+  letter-spacing: -0.039em;
+  line-height: 2.4;
 }
 @media screen and (min-width: 768px) {
   .p-mv__title {
@@ -1211,18 +1130,20 @@ input[tupe=text] {
 }
 
 .p-news__section-title {
-  margin-top: 60px;
-  margin-top: 3.75rem;
+  margin-top: 55px;
+  margin-top: 3.4375rem;
 }
 
 .p-news__tab {
-  margin: 46px auto 0;
-  margin: 2.875rem auto 0;
+  margin-top: 43px;
+  margin-top: 2.6875rem;
+  margin-right: 21px;
+  margin-right: 1.3125rem;
 }
 
 .p-news__items-wrapper {
-  margin-top: 49px;
-  margin-top: 3.0625rem;
+  margin-top: 45px;
+  margin-top: 2.8125rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -1237,18 +1158,23 @@ input[tupe=text] {
 
 .p-news__item {
   background-color: #f6f6f6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 10px 0 21px 12px;
+  padding: 0.625rem 0 1.3125rem 0.75rem;
+  max-width: 570px;
+  max-width: 35.625rem;
   width: 100%;
-  padding: 15px 39px 15px 10px;
-  padding: 0.9375rem 2.4375rem 0.9375rem 0.625rem;
 }
 @media screen and (min-width: 768px) {
   .p-news__item {
     width: calc(50% - 1.4375rem);
     margin-right: 2.875rem;
   }
+}
+
+.p-news__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .p-news__item + .p-news__item {
@@ -1275,10 +1201,9 @@ input[tupe=text] {
 }
 
 .p-news__img {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 18.0701754%;
-          flex: 0 1 18.0701754%;
   position: relative;
+  max-width: 103px;
+  max-width: 6.4375rem;
   width: 100%;
 }
 
@@ -1298,25 +1223,32 @@ input[tupe=text] {
   height: 100%;
 }
 
-.p-news__body {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-left: 5.2631579%;
+.p-news__content {
+  max-width: 388px;
+  max-width: 24.25rem;
+  width: 100%;
+  margin-left: 30px;
+  margin-left: 1.875rem;
+  line-height: 1;
 }
 
-.p-news__body > *:last-child {
+.p-news__content > *:last-child {
   margin-bottom: 0;
 }
 
 .p-news__date {
+  display: inline-block;
   font-size: 14px;
   font-size: 0.875rem;
+  line-height: 1;
+  letter-spacing: -0.09em;
 }
 
 .p-news__text {
-  margin-top: 10px;
-  margin-top: 0.625rem;
+  margin-top: 5px;
+  margin-top: 0.3125rem;
+  letter-spacing: -0.02em;
+  line-height: 1.9;
 }
 
 .p-news__items-wrapper {
@@ -1365,9 +1297,81 @@ input[tupe=text] {
   padding-top: 3.75rem;
 }
 
-.p-plan__cards {
+.p-plan__items {
   margin-top: 66px;
   margin-top: 4.125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-plan__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-plan__item {
+    width: calc(33.33333% - 3.91667rem);
+    margin-right: 5.875rem;
+  }
+}
+
+.p-plan__item + .p-plan__item {
+  margin-top: 94px;
+  margin-top: 5.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-plan__item + .p-plan__item {
+    margin-top: 0;
+    margin-top: initial;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-plan__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.p-plan__img {
+  position: relative;
+  padding-top: 63.141994%;
+}
+
+.p-plan__img img {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-plan__body {
+  padding-top: 29px;
+  padding-top: 1.8125rem;
+}
+
+.p-plan__title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.p-plan__text {
+  padding-top: 25px;
+  padding-top: 1.5625rem;
+  word-break: keep-all;
+  line-height: 1.9;
+}
+
+.p-plan__item:nth-child(3) .p-plan__text {
+  padding-top: 21px;
+  padding-top: 1.3125rem;
 }
 
 .p-service__items {
@@ -1421,23 +1425,28 @@ input[tupe=text] {
 }
 
 .p-service__title {
-  margin-top: 32px;
-  margin-top: 2rem;
+  padding-top: 21px;
+  padding-top: 1.3125rem;
   font-size: 36px;
   font-size: 2.25rem;
   font-weight: 400;
   line-height: 1.7;
 }
 
+.p-service__item:nth-of-type(2) .p-service__title {
+  padding-top: 42px;
+  padding-top: 2.625rem;
+}
+
 .p-service__text {
-  margin-top: 75px;
-  margin-top: 4.6875rem;
+  margin-top: 55px;
+  margin-top: 3.4375rem;
   line-height: 2;
 }
 
 .p-service__button {
-  margin-top: 75px;
-  margin-top: 4.6875rem;
+  margin-top: 64px;
+  margin-top: 4rem;
 }
 
 .p-service__item--row_reverse {
@@ -1448,7 +1457,9 @@ input[tupe=text] {
 }
 
 .p-service__body--row_reverse {
-  margin-right: 7.1354167vw;
+  margin-right: 9.1354167vw;
+  margin-left: 0;
+  margin-left: initial;
 }
 
 .p-service__button {
@@ -1458,6 +1469,11 @@ input[tupe=text] {
   .p-service__button {
     text-align: left;
   }
+}
+
+.p-service__item:nth-of-type(2) .p-service__button {
+  margin-top: 34px;
+  margin-top: 2.125rem;
 }
 
 .pc-br {

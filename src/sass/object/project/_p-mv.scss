@@ -18,15 +18,15 @@
   color: $white;
   writing-mode: vertical-rl;
   position: absolute;
-  top: 33%;
-  right: 26%;
+  top: 33.4%;
+  right: 25.4%;
   z-index: 2;
 }
 
 .p-mv__title {
   font-size: rem(20);
-  letter-spacing: 0.1em;
-  line-height: 2.1;
+  letter-spacing: -0.039em;
+  line-height: 2.4;
   @include mq("md") {
     font-size: rem(34);
   }
