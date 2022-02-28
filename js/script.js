@@ -115,8 +115,8 @@ jQuery(function ($) {
 
   // ふわっと表示(AOS.jsライブラリ使用)
   AOS.init({
-    offset: 200,
-    delay: 200,
+    offset: 100,
+    delay: 100,
     duration: 300,
     easing: "ease-out",
   });
