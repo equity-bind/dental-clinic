@@ -1032,8 +1032,8 @@ p-header__pc-nav--color_sub {
   max-width: 550px;
   max-width: 34.375rem;
   width: 100%;
-  padding-top: 29px;
-  padding-top: 1.8125rem;
+  padding-top: 24px;
+  padding-top: 1.5rem;
   padding-bottom: 90px;
   padding-bottom: 5.625rem;
   margin-top: 100px;
@@ -1071,6 +1071,8 @@ p-header__pc-nav--color_sub {
   .p-modal__inner {
     max-width: 26.8125rem;
     margin: 0 auto;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
   }
 }
 
@@ -1083,8 +1085,8 @@ input[tupe=text] {
   font-size: 1.25rem;
   font-weight: 400;
   text-align: center;
-  padding-bottom: 30px;
-  padding-bottom: 1.875rem;
+  padding-bottom: 26px;
+  padding-bottom: 1.625rem;
   border-bottom: 1px solid #e7e7e7;
   position: relative;
 }
@@ -1092,33 +1094,61 @@ input[tupe=text] {
 .p-modal__item {
   margin-top: 14px;
   margin-top: 0.875rem;
-  margin-bottom: 14px;
-  margin-bottom: 0.875rem;
 }
 @media screen and (min-width: 768px) {
   .p-modal__item {
-    margin-top: 2.21875rem;
+    margin-top: 1.9375rem;
   }
 }
 
 .p-modal__item + .p-modal__item {
-  margin-top: 0;
-  margin-top: initial;
+  margin-top: 9.6px;
+  margin-top: 0.6rem;
 }
 
 .p-modal__label {
   display: inline-block;
 }
 
+.p-modal__label span {
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding-left: 1.9px;
+  padding-left: 0.11875rem;
+  letter-spacing: 0.005em;
+}
+
 .p-modal__form input[type=text],
 .p-modal__form input[type=email],
 .p-modal__form select {
-  margin-top: 14px;
-  margin-top: 0.875rem;
-  padding: 10px;
-  padding: 0.625rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+  padding-top: 4.3px;
+  padding-top: 0.26875rem;
+  padding-left: 10px;
+  padding-left: 0.625rem;
+  padding-bottom: 4px;
+  padding-bottom: 0.25rem;
   border: 1px solid #e7e7e7;
   width: 100%;
+}
+
+.p-modal__form input[name=your-name] {
+  padding-left: 14px;
+  padding-left: 0.875rem;
+}
+
+.p-modal__form input[type=email] {
+  padding-left: 10px;
+  padding-left: 0.625rem;
+  letter-spacing: -0.045em;
+}
+
+.p-modal__form select {
+  padding-left: 10px;
+  padding-left: 0.625rem;
 }
 
 .p-modal__form select:invalid {

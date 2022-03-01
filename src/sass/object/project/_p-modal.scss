@@ -26,7 +26,7 @@
   background-color: $white;
   max-width: rem(550);
   width: 100%;
-  padding-top: rem(29);
+  padding-top: rem(24);
   padding-bottom: rem(90);
   margin-top: rem(100);
   margin-left: auto;
@@ -53,6 +53,7 @@
   @include mq("md") {
     max-width: rem(429);
     margin: 0 auto;
+    box-sizing: content-box;
   }
 }
 input[tupe="text"] {
@@ -63,21 +64,20 @@ input[tupe="text"] {
   font-size: rem(20);
   font-weight: $medium;
   text-align: center;
-  padding-bottom: rem(30);
+  padding-bottom: rem(26);
   border-bottom: 1px solid $border-color;
   position: relative;
 }
 
 .p-modal__item {
   margin-top: rem(14);
-  margin-bottom: rem(14);
   @include mq("md") {
-    margin-top: rem(35.5);
+    margin-top: rem(31);
   }
 }
 
 .p-modal__item + .p-modal__item {
-  margin-top: initial;
+  margin-top: rem(9.6);
 }
 
 .p-modal__label {
@@ -85,13 +85,34 @@ input[tupe="text"] {
   // width: 25%;
 }
 
+.p-modal__label span {
+  font-size: rem(14);
+  padding-left: rem(1.9);
+  letter-spacing: 0.005em;
+}
 .p-modal__form input[type="text"],
 .p-modal__form input[type="email"],
 .p-modal__form select {
-  margin-top: rem(14);
-  padding: rem(10);
+  font-size: rem(14);
+  margin-top: rem(10);
+  padding-top: rem(4.3);
+  padding-left: rem(10);
+  padding-bottom: rem(4);
+  // padding: rem(10) 0 rem(10) rem(10);
   border: 1px solid $border-color;
   width: 100%;
+}
+
+.p-modal__form input[name="your-name"] {
+  padding-left: rem(14);
+}
+.p-modal__form input[type="email"] {
+  padding-left: rem(10);
+  letter-spacing: -0.045em;
+}
+
+.p-modal__form select {
+  padding-left: rem(10);
 }
 
 .p-modal__form select:invalid {
