@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .p-sub-mv {
-  height: rem(550);
-  width: 100vw;
+  height: rem(580);
+  width: 100%;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -17,5 +17,5 @@
   font-size: rem(34);
   text-align: center;
   font-weight: $extrabold;
-  padding-top: rem(50);
+  padding-top: rem(80);
 }

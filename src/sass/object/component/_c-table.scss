@@ -4,12 +4,18 @@
   border-collapse: collapse;
 }
 
+.c-table__row {
+  vertical-align: middle;
+}
 .c-table__title {
   font-size: rem(15);
   font-weight: $medium;
   text-align: left;
-  padding-top: rem(17.5);
-  padding-bottom: rem(17.5);
+  padding-top: rem(13.6);
+  padding-left: rem(5);
+  padding-bottom: rem(13.6);
+  // padding: rem(13.6) 0;
+  vertical-align: top;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
   white-space: nowrap;
@@ -17,10 +23,12 @@
 
 .c-table__description {
   font-size: rem(15);
-  line-height: 1.28;
-  padding-top: rem(17.5);
-  padding-left: rem(190);
-  padding-bottom: rem(17.5);
+  line-height: 1.4;
+  padding-top: rem(13.6);
+  padding-left: rem(158);
+  padding-bottom: rem(13.6);
+
+  vertical-align: middle;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
 }

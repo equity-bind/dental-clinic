@@ -1,0 +1,5 @@
+
+AuthUserFile "/home/waverhhkb/hhkb-practice.net/htpasswd/wavakb.hhkb-practice.net/.htpasswd"
+AuthName "Member Site"
+AuthType BASIC
+require valid-user

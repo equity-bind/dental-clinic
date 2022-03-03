@@ -3,6 +3,8 @@
 .p-access__container {
   padding-bottom: rem(110);
   background: url(../images/common/bg.jpg) no-repeat center center / cover;
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
 }
 
 .p-access__section-title {
@@ -12,9 +14,6 @@
 .p-access__inner {
   max-width: rem(1435);
   width: 100%;
-  padding-left: $padding-sp;
-  padding-right: $padding-sp;
-  box-sizing: content-box;
   margin: 0 auto;
 }
 .p-access__contents {
@@ -52,8 +51,10 @@
   // width: 100%;
   // flex: 1;
   padding-top: rem(16);
-  padding-left: rem(83);
   // white-space: nowrap;
+  @include mq("md") {
+    padding-left: rem(83);
+  }
 }
 
 .p-access__address-title {

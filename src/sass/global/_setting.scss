@@ -90,6 +90,14 @@ $mediaquerys: (
   }
 }
 
+// 768px以上のみ改行させる
+.pc-br {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
+
 @mixin button {
   display: inline-block;
   text-align: center;

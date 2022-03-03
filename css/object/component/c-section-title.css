@@ -19,6 +19,15 @@ body {
   }
 }
 
+.pc-br {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .pc-br {
+    display: block;
+  }
+}
+
 .c-section-title__img {
   margin: 0 auto;
   width: 40px;
