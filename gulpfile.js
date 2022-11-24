@@ -4,9 +4,9 @@ const { src, dest, watch, series, parallel } = require("gulp");
 // const rename = require("gulp-rename");
 
 // サイト名を入力する部分
-const sitedomain = "codeupsadvanced";
+const sitedomain = "daytragraduateproblem";
 // WordPressテーマ名を入力する部分
-const themeName = "WordPressTheme"; // WordPress theme name
+const themeName = "dental-clinic"; // WordPress theme name
 //(WordPressテーマ名を入力したら、フォルダ名変更、style.cssのTheme Name変更もしないと反映されない)
 
 // 読み込み先（階層が間違えていると動かないので注意）
