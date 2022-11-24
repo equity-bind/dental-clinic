@@ -15,13 +15,13 @@ $padding-sp: 20px;
 ////////////////////
 // フォント設定
 ////////////////////
-$base-font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+$base-font-family: "";
 $heading-family: "Toppan Bunkyu Midashi Mincho";
 // ※検証ツールでしっかり反映されているか確認する
 
 // フォントウェイト
 $medium: 400;
-$extrabold: 700;
+
 
 ////////////////////
 // 色の指定
@@ -29,15 +29,9 @@ $extrabold: 700;
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #000;
-$white: #fff;
-$yellow: #978f10;
-$light-gray: #f6f6f6;
-$border-color: #e7e7e7;
 
-body {
-  font-family: $base-font-family;
-  background-color: $white;
-}
+
+
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
@@ -96,14 +90,4 @@ $mediaquerys: (
   @include mq("md") {
     display: block;
   }
-}
-
-@mixin button {
-  display: inline-block;
-  text-align: center;
-  font-size: rem(16);
-  line-height: 1;
-  min-width: rem(200);
-  padding: 1.25em 2.75em;
-  border: rem(1) solid #707070;
 }

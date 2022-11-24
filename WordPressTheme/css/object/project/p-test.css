@@ -1,0 +1,29 @@
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.pc-br {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .pc-br {
+    display: block;
+  }
+}
+
+.p-test {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+/*# sourceMappingURL=p-test.css.map */

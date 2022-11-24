@@ -1,19 +1,25 @@
 const { src, dest, watch, series, parallel } = require("gulp");
 
 // 共通
-const rename = require("gulp-rename");
+// const rename = require("gulp-rename");
+
+// サイト名を入力する部分
+const sitedomain = "codeupsadvanced";
+// WordPressテーマ名を入力する部分
+const themeName = "WordPressTheme"; // WordPress theme name
+//(WordPressテーマ名を入力したら、フォルダ名変更、style.cssのTheme Name変更もしないと反映されない)
 
 // 読み込み先（階層が間違えていると動かないので注意）
 const srcPath = {
   css: "src/sass/**/*.scss",
   img: "src/images/**/*",
-  html: "./**/*.html",
+  // php: `./${themeName}/**/*.php`,
 };
 
 // 吐き出し先（なければ生成される）
 const destPath = {
-  css: "css/",
-  img: "images/",
+  css: `./${themeName}/css/`,
+  img: `./${themeName}/images/`,
 };
 
 // ブラウザーシンク（リアルタイムでブラウザに反映させる処理）
@@ -86,7 +92,8 @@ const imgImagemin = () => {
 const watchFiles = () => {
   watch(srcPath.css, series(cssSass, browserSyncReload));
   watch(srcPath.img, series(imgImagemin, browserSyncReload));
-  watch(srcPath.html, series(browserSyncReload));
+
+  // watch(srcPath.php, series(browserSyncReload));
 };
 
 // 画像だけ削除
@@ -95,15 +102,20 @@ const delPath = {
   // css: '../dist/css/',
   // js: '../dist/js/script.js',
   // jsMin: '../dist/js/script.min.js',
-  img: "./images/",
+
+  // img: "./images/",
+
+  img: `./${themeName}/images/`,
   // html: '../dist/*.html',
   // wpcss: `../${themeName}/assets/css/`,
   // wpjs: `../${themeName}/assets/js/script.js`,
   // wpjsMin: `../${themeName}/assets/js/script.min.js`,
   // wpImg: `../${themeName}/assets/images/`
 };
+
 const clean = (done) => {
   del(delPath.img, { force: true });
+
   // del(delPath.css, { force: true, });
   // del(delPath.js, { force: true, });
   // del(delPath.jsMin, { force: true, });
@@ -112,10 +124,14 @@ const clean = (done) => {
   // del(delPath.wpjs, { force: true, });
   // del(delPath.wpjsMin, { force: true, });
   // del(delPath.wpImg, { force: true, });
+
   done();
 };
 
 // npx gulpで出力する内容
+
+// exports.default = series(series(clean, cssSass, imgImagemin), parallel(watchFiles, browserSyncFunc));
+
 exports.default = series(series(clean, cssSass, imgImagemin), parallel(watchFiles, browserSyncFunc));
 
 // npx gulp del → 画像最適化（重複を削除）
