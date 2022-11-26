@@ -1,0 +1,65 @@
+@use "global" as *;
+
+//カードアイテム単体のcss
+.c-card {
+  width: 100%;
+  max-width: rem(300);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
+}
+
+.c-card__title {
+  position: relative;
+  width: 100%;
+  max-width: rem(185);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-card__title::before {
+  content: "";
+  display: block;
+  padding-top: 17.5141243%;
+}
+
+.c-card__title img {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-50%);
+  object-fit: cover;
+}
+
+.c-card__img-wrapper {
+  padding-top: rem(13);
+  position: relative;
+}
+
+.c-card__img-wrapper::before {
+  content: "";
+  display: block;
+  padding-top: 87%;
+}
+
+.c-card__img-wrapper img {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-50%);
+  object-fit: cover;
+}
+.c-card__body {
+  padding-top: rem(24);
+}
+
+.c-card__text {
+  font-size: rem(14);
+}
+
+.c-card__text span {
+  color: $red;
+}

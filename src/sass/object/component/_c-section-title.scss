@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.c-section-title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.c-section-title span {
+  display: inline-block;
+  font-weight: bold;
+  font-size: rem(28);
+  letter-spacing: 0.224em;
+  position: relative;
+  padding-left: rem(70);
+  padding-right: rem(70);
+  @include mq("md") {
+    padding-left: rem(100);
+    padding-right: rem(100);
+  }
+}
+.c-section-title span::before,
+.c-section-title span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: rem(80);
+  height: rem(25);
+}
+.c-section-title span::before {
+  background: transparent url(../images/top/title-deco.png) no-repeat center left 5px / contain;
+  left: 0;
+}
+.c-section-title span::after {
+  background: transparent url(../images/top/title-deco.png) no-repeat center right 5px / contain;
+  right: 0;
+}

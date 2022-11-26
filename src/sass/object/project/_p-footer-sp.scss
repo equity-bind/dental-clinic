@@ -1,0 +1,79 @@
+@use "global" as *;
+
+.p-footer-sp {
+  height: rem(60);
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.p-footer-sp__container {
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  padding-top: rem(7);
+  padding-bottom: rem(7);
+  border-top: 1px solid $blue;
+}
+
+.p-footer-sp__tel-number {
+  font-size: rem(15);
+  color: $blue;
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  padding-left: rem(25);
+  position: relative;
+}
+
+.p-footer-sp__tel-number::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../images/top/tel.svg) no-repeat center center / contain;
+  width: rem(18);
+  height: rem(18);
+}
+
+.p-footer-sp__opening-time {
+  font-size: rem(10);
+  padding-top: rem(2);
+  text-align: center;
+}
+
+.p-footer-sp__button {
+  margin-left: rem(12);
+}
+
+.p-footer-sp__button a {
+  display: inline-block;
+  color: $white;
+  font-size: rem(15);
+  font-weight: $bold;
+  line-height: 1.2;
+  padding-top: rem(10);
+  padding-left: rem(75);
+  padding-right: rem(22);
+  padding-bottom: rem(6);
+  background-color: $blue;
+  border-radius: rem(8);
+  position: relative;
+  white-space: nowrap;
+}
+
+.p-footer-sp__button a span {
+  font-size: rem(11);
+  display: block;
+  text-align: center;
+}
+.p-footer-sp__button a::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(10);
+  width: rem(44);
+  height: rem(26);
+  background: url(../images/top/icon-pc.svg) no-repeat center center / contain;
+}

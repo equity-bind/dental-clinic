@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.c-title {
+  font-size: rem(20);
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+  @include mq("md"){
+    font-size: rem(28);
+  }
+}
+
+.c-title span {
+  color: $blue;
+  text-transform: uppercase;
+  display: block;
+  font-size: rem(11);
+  padding-bottom: rem(16);
+  letter-spacing: 0.1em;
+  @include mq("md"){
+    font-size: rem(14);
+  }
+}

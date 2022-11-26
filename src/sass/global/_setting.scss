@@ -4,7 +4,7 @@
 // インナー幅設定
 ////////////////////
 // コンテンツのインナー幅（最も共通の幅が多い部分）
-$inner: 1180px;
+$inner: 1000px;
 // ※キャンパス幅ではなくインナーの幅を指す
 
 // 余白
@@ -15,12 +15,17 @@ $padding-sp: 20px;
 ////////////////////
 // フォント設定
 ////////////////////
-$base-font-family: "";
-$heading-family: "Toppan Bunkyu Midashi Mincho";
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&display=swap');
+
+$base-font-family: "'M PLUS Rounded 1c', sans-serif";
+// $second-family: "";
+
 // ※検証ツールでしっかり反映されているか確認する
 
 // フォントウェイト
-$medium: 400;
+$medium: 500;
+$bold: 700;
 
 
 ////////////////////
@@ -28,9 +33,12 @@ $medium: 400;
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #000;
-
-
+$black: #393939;
+$white: #fff;
+$blue: #1391E6;
+$deep-blue: #0060A0;
+$light-blue: #DFF1FD;
+$red: #EE5A6D;
 
 
 ////////////////////

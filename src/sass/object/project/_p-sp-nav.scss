@@ -1,0 +1,76 @@
+@use "global" as *;
+
+.p-sp-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background-color: $deep-blue;
+  // transform: translateX(-100%);
+  display: none;
+  transition: ease 0.3s;
+  @include mq("md") {
+    display: none;
+  }
+}
+.p-sp-nav.is-open {
+  display: block;
+}
+
+.p-sp-nav__items {
+  height: 100vh;
+  padding-top: rem(100);
+  padding-bottom: rem(200);
+  overflow: scroll;
+  @include mq("md") {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.p-sp-nav__item a {
+  display: block;
+  width: 68%;
+  padding-top: rem(18);
+  padding-bottom: rem(18);
+  margin-left: auto;
+  margin-right: auto;
+  color: $white;
+  cursor: pointer;
+  border-top: 1px dashed $white;
+  border-bottom: 1px dashed $white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &:hover {
+    text-decoration: underline #ffea2e;
+  }
+}
+
+.p-sp-nav__item a::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: url("../images/top/icon-right.svg") no-repeat center center / contain;
+  width: rem(14);
+  height: rem(14);
+}
+
+.p-sp-nav__item + .p-sp-nav__item a {
+  border-top-width: 0;
+}
+
+.p-sp-nav__icon {
+  width: 100%;
+  max-width: rem(24);
+}
+
+.p-sp-nav__text {
+  font-size: rem(14);
+  margin-left: rem(14);
+}

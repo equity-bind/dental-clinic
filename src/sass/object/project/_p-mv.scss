@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.p-mv__container {
+  position: relative;
+}
+
+.p-mv__swiper .swiper-slide {
+  width: 100%;
+}
+
+.p-mv__img img {
+  width: 100%;
+  height: auto;
+}
+
+.p-mv__web-reserve {
+  display: none;
+  @include mq("md") {
+    position: absolute;
+    top: 10%;
+    right: rem(-38);
+    width: 100%;
+    max-width: rem(92);
+    padding: rem(21);
+    z-index: 100;
+    display: block;
+  }
+}
+
+.p-mv__content {
+  position: absolute;
+  top: 80%;
+  left: rem(38);
+  width: 100%;
+  max-width: rem(265);
+  z-index: 100;
+  @include mq("md") {
+    top: 67%;
+    max-width: rem(415);
+  }
+}
+
+.p-mv__bottom-container {
+  @include mq("md") {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: rem(50);
+    padding-right: rem(50);
+    margin-top: rem(-30);
+  }
+}
+
+.p-mv__medical-time {
+  width: 100%;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+  border-radius: rem(10);
+  @include mq("md") {
+    width: 41%;
+    z-index: 100;
+  }
+}
+
+.p-mv__news {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: initial;
+  }
+}

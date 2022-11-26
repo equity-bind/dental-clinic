@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.p-recommend {
+  z-index: 5;
+}
+
+.p-recommend__title span {
+  font-size: rem(18);
+}
+
+.p-recommend__items {
+  padding-top: rem(40);
+  @include mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.p-recommend__item {
+  @include mq("md") {
+    // rem(94):カードアイテム幅
+    width: calc((100% - (rem(66) * 2)) / 3);
+    margin-right: rem(66);
+  }
+}
+
+.p-recommend__item + .p-recommend__item {
+  // スマホサイズの時のカードアイテム幅
+  margin-top: rem(60);
+  @include mq("md") {
+    margin-top: initial;
+  }
+}
+
+.p-recommend__item:nth-child(n + 4) {
+  // 二段目以降のカードアイテムとの間隔
+  margin-top: rem(47);
+}
+.p-recommend__item:nth-child(3n) {
+  @include mq("md") {
+    // 一番右端のカードアイテムのmargin-rightリセット
+    margin-right: initial;
+  }
+}

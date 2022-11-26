@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.p-about__sp-bg {
+  position: relative;
+}
+
+.p-about__sp-bg::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: rem(300);
+  z-index: -1;
+  background: url(../images/top/concept-bg_sp.jpg) no-repeat center right 105% / cover;
+  @include mq("md") {
+    width: rem(864);
+    height: rem(725);
+    top: rem(-70);
+    background: url(../images/top/concept-bg.jpg) no-repeat center right 103% / cover;
+  }
+}
+
+.p-about__media {
+  padding-top: rem(110);
+}
